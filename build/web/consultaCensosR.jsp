@@ -103,7 +103,7 @@
                     <li class="active"><a href="/CensosVer/login?ban=2">Men&uacute;</a></li>
                     <li><a data-toggle="modal" href="#myModal2">Instrucciones</a></li>
                     <li><a data-toggle="modal" href="#myModal">Sistemas</a></li>
-                    <li><a href="indexCapR.jsp">Salir</a></li>
+                    <li><a href="indexMain.jsp">Salir</a></li>
                 </ul>
                 <h3 class="text-primary"><a name="top" id="top"></a>Captura de Censos Rurales</h3>
             </div>

@@ -179,6 +179,21 @@
                                     <th>Selecciona la imagen 7</th><td><input type="file" name="file7" accept=".JPG"/></td>
                                 </tr>
                                 <tr>
+                                    <th>Selecciona la imagen 8</th><td><input type="file" name="file8" accept=".JPG"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Selecciona la imagen 9</th><td><input type="file" name="file9" accept=".JPG"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Selecciona la imagen 10</th><td><input type="file" name="file10" accept=".JPG"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Selecciona la imagen 11</th><td><input type="file" name="file11" accept=".JPG"/></td>
+                                </tr>
+                                <tr>
+                                    <th>Selecciona la imagen 12</th><td><input type="file" name="file12" accept=".JPG"/></td>
+                                </tr>
+                                <tr>
 
                                     <td colspan="2"><button class="btn btn-block btn-primary">CARGAR IMAGENES</button></td>
                                 </tr>
