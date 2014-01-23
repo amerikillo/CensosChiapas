@@ -33,7 +33,22 @@
         <link  href="css/bootstrap-responsive.css" rel="stylesheet" />
         <link href="css/jumbotron-narrow.css" rel="stylesheet" />
 
+        <script type="text/javascript" src="js/jquery.min.js"></script>
 
+        <script src ="Scripts/jquery-1.6.1.min.js" type = "text/javascript" ></script>
+        <!--link rel="stylesheet" href="css/mm_entertainment.css" type="text/css" /-->
+        <script language="javascript" src="js/codeJs.js"></script>
+        <script language="JavaScript" type="text/javascript" >
+
+            //--------------- LOCALIZEABLE GLOBALS ---------------
+            var d = new Date();
+            var monthname = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+            //Ensure correct for language. English is "January 1, 2004"
+            var TODAY = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+            //---------------   END LOCALIZEABLE   ---------------
+
+            //<script language="javascript" src="list02.js">
+        </script>
         <style type="text/css">
             <!--
             .style1 {
@@ -100,10 +115,10 @@
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="/CensosVer/login?ban=2">Men&uacute;</a></li>
+                    <li class="active"><a href="indexMain.jsp">Men&uacute;</a></li>
                     <li><a data-toggle="modal" href="#myModal2">Instrucciones</a></li>
                     <li><a data-toggle="modal" href="#myModal">Sistemas</a></li>
-                    <li><a href="indexMain.jsp">Salir</a></li>
+                    <li><a href="index.jsp">Salir</a></li>
                 </ul>
                 <h3 class="text-primary"><a name="top" id="top"></a>Consulta de Censos Rurales</h3>
             </div>
@@ -1085,9 +1100,8 @@
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
-
-            <a href="#" class="scrollup">Scroll</a>
         </table>
+        <a href="#" class="scrollup">Scroll</a>
     </body>
 </html>
 <%
@@ -1095,106 +1109,6 @@
 
     con.cierraConexion();
 %>
-
-<script type="text/javascript">
-    function validar_a() {
-        //obteniendo el valor que se puso en campo text del formulario
-        for (i = 1; i <= 31; i++) {
-            miCampoTexto = document.getElementById("campo_" + i).value;
-            //la condición
-            if (miCampoTexto.length === 0) {
-                alert("El campo número " + i + " de la sección A esta vacío");
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    function validar_b() {
-        //obteniendo el valor que se puso en campo text del formulario
-        for (i = 32; i <= 45; i++) {
-            miCampoTexto = document.getElementById("campo_" + i).value;
-            //la condición
-            if (miCampoTexto.length === 0) {
-                alert("El campo número " + i + " de la sección B esta vacío");
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    function validar_c() {
-        //obteniendo el valor que se puso en campo text del formulario
-        for (i = 46; i <= 54; i++) {
-            miCampoTexto = document.getElementById("campo_" + i).value;
-            //la condición
-            if (miCampoTexto.length === 0) {
-                alert("El campo número " + i + " de la sección C esta vacío");
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    function validar_d() {
-        //obteniendo el valor que se puso en campo text del formulario
-        for (i = 55; i <= 61; i++) {
-            miCampoTexto = document.getElementById("campo_" + i).value;
-            //la condición
-            if (miCampoTexto.length === 0) {
-                alert("El campo número " + i + " de la sección D esta vacío");
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    function validar_e() {
-        //obteniendo el valor que se puso en campo text del formulario
-        for (i = 63; i <= 70; i++) {
-            miCampoTexto = document.getElementById("campo_" + i).value;
-            //la condición
-            if (miCampoTexto.length === 0) {
-                alert("El campo número " + i + " de la sección E esta vacío");
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    function validar_f() {
-        //obteniendo el valor que se puso en campo text del formulario
-        for (i = 71; i <= 71; i++) {
-            miCampoTexto = document.getElementById("campo_" + i).value;
-            //la condición
-            if (miCampoTexto.length === 0) {
-                alert("El campo número " + i + " de la sección F esta vacío");
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    function validar_g() {
-        //obteniendo el valor que se puso en campo text del formulario
-        for (i = 151; i <= 151; i++) {
-            miCampoTexto = document.getElementById("campo_" + i).value;
-            //la condición
-            if (miCampoTexto.length === 0) {
-                alert("El campo número " + i + " de la sección G esta vacío");
-                return false;
-            }
-        }
-
-        return true;
-    }
-</script>
 <script type="text/javascript">
     $(document).ready(function() {
         $('#form').submit(function() {
@@ -1329,22 +1243,7 @@
     });
 </script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="/code.jquery.com/jquery.js"></script>
+<script src="//code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap-modal.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-
-<script src ="Scripts/jquery-1.6.1.min.js" type = "text/javascript" ></script>
-<!--link rel="stylesheet" href="css/mm_entertainment.css" type="text/css" /-->
-<script language="javascript" src="js/codeJs.js"></script>
-<script language="JavaScript" type="text/javascript">
-
-    //--------------- LOCALIZEABLE GLOBALS ---------------
-    var d = new Date();
-    var monthname = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-    //Ensure correct for language. English is "January 1, 2004"
-    var TODAY = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
-    //---------------   END LOCALIZEABLE   ---------------
-
-    //<script language="javascript" src="list02.js"></script>

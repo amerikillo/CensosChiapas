@@ -1,3 +1,5 @@
+<%@page import="java.text.DecimalFormat"%>
+<%@page import="java.text.DecimalFormatSymbols"%>
 <%@page import="conn.ConectionDB"%>
 <%@ page contentType="text/html; charset=iso-8859-1" language="java" import="java.sql.*" session="true" errorPage="" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -14,7 +16,12 @@
         ResultSet rset = con.consulta("select * from tb_a as a, tb_b as b, tb_c as c, tb_d as d, tb_e as e, tb_f as f, tb_unidades as clave where clave.id_uni=a.id_uni and clave.id_uni=b.id_uni and clave.id_uni=c.id_uni and clave.id_uni=d.id_uni and clave.id_uni=e.id_uni and clave.id_uni=f.id_uni and clave.id_uni = '" + id_uni + "';");
         while (rset.next()) {
 %>
-
+<%
+DecimalFormatSymbols simbolos = new DecimalFormatSymbols();
+simbolos.setDecimalSeparator('.');
+simbolos.setGroupingSeparator(',');
+DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
+%>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <!-- DW6 -->
     <head>
@@ -130,8 +137,10 @@
                     <td colspan="7"  class="style58">
                         Estatus del Censo:<br />
                         <%
+                            float total = 0;
                             for (int i = 1; i <= 31; i++) {
                                 if (rset.getString("campo_" + i).equals("")) {
+                                    total++;
                                     out.println("Sección A incompleta - ");
                                     break;
                                 }
@@ -140,6 +149,7 @@
                         %>
                         <%                                    for (int i = 32; i <= 45; i++) {
                                 if (rset.getString("campo_" + i).equals("")) {
+                                    total++;
                                     out.println("Sección B incompleta - ");
                                     break;
                                 }
@@ -148,6 +158,7 @@
                         %>
                         <%                                    for (int i = 46; i <= 54; i++) {
                                 if (rset.getString("campo_" + i).equals("")) {
+                                    total++;
                                     out.println("Sección C incompleta - ");
                                     break;
                                 }
@@ -156,6 +167,7 @@
                         %>
                         <%                                    for (int i = 55; i <= 62; i++) {
                                 if (rset.getString("campo_" + i).equals("")) {
+                                    total++;
                                     out.println("Sección D incompleta - ");
                                     break;
                                 }
@@ -164,6 +176,7 @@
                         %>
                         <%                                    for (int i = 63; i <= 70; i++) {
                                 if (rset.getString("campo_" + i).equals("")) {
+                                    total++;
                                     out.println("Sección E incompleta - ");
                                     break;
                                 }
@@ -172,17 +185,18 @@
                         %>
                         <%                                    for (int i = 71; i <= 71; i++) {
                                 if (rset.getString("campo_" + i).equals("")) {
+                                    total++;
                                     out.println("Sección F incompleta - ");
                                     break;
                                 }
                             }
-
+                            float avance = total / 6;
                         %>
 
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="7"  class="style43 style51"></hr></td>
+                    <td colspan="7"><div class="panel panel-primary">Porcentaje de Avance =<%=forma2.format((1 - avance) * 100)%> %</div></td>
                 </tr>
                 <tr>
                     <td colspan="3"  class="style58">Seleccione Secci&oacute;n
@@ -1314,22 +1328,7 @@
     });
 </script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="/code.jquery.com/jquery.js"></script>
+<script src="//code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap-modal.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-
-<script src ="Scripts/jquery-1.6.1.min.js" type = "text/javascript" ></script>
-<!--link rel="stylesheet" href="css/mm_entertainment.css" type="text/css" /-->
-<script language="javascript" src="js/codeJs.js"></script>
-<script language="JavaScript" type="text/javascript">
-
-    //--------------- LOCALIZEABLE GLOBALS ---------------
-    var d = new Date();
-    var monthname = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-    //Ensure correct for language. English is "January 1, 2004"
-    var TODAY = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
-    //---------------   END LOCALIZEABLE   ---------------
-
-    //<script language="javascript" src="list02.js"></script>
