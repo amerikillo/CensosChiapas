@@ -451,11 +451,11 @@
                                 <label>
                                     <span class="style58">Desde:</span></label>
                                 <label for="textfield"></label>
-                                <input name="<%=nombreC = nomCam + (contCam += 1)%>"  class="form-control" type="text" id="<%=nombreC%>" size="7" maxlength="7" />
+                                <input name="<%=nombreC = nomCam + (contCam += 1)%>"  class="form-control" type="text" id="<%=nombreC%>" size="7" maxlength="7" value="<%=rset.getString(nombreC)%>"  />
                                 <%out.print(nombreC);%></label> 
                                 <br />
                                 <label><span class="style58">Hasta :</span></label>
-                                <input name="<%=nombreC = nomCam + (contCam += 1)%>"  class="form-control" type="text" id="<%=nombreC%>"   size="7" maxlength="7" />
+                                <input name="<%=nombreC = nomCam + (contCam += 1)%>"  class="form-control" type="text" id="<%=nombreC%>"   size="7" maxlength="7" value="<%=rset.getString(nombreC)%>"  />
                                 <label><span class="style58">&nbsp;</span>
                                     <%out.print(nombreC);%></label>   
 
@@ -695,11 +695,11 @@
                         </td>
                         <td class="style58">Horario de atenci&oacute;n</td>
                         <td><span class="style58">De:</span>
-                            <input name="<%=nombreC = nomCam + (contCam += 1)%>" type="text" class="form-control"  id="<%=nombreC%>" size="5" maxlength="5" onkeypress="return handleEnter(this, event);" />
+                            <input name="<%=nombreC = nomCam + (contCam += 1)%>" type="text" class="form-control"  id="<%=nombreC%>" size="5" maxlength="5" onkeypress="return handleEnter(this, event);" value="<%=rset.getString(nombreC)%>"  />
                             <%out.print(nombreC);%></label> 
                             <br />
                             <span class="style58">A:</span>
-                            <input name="<%=nombreC = nomCam + (contCam += 1)%>"  type="text" class="form-control"  id="<%=nombreC%>" size="5" maxlength="5" onkeypress="return handleEnter(this, event);" />
+                            <input name="<%=nombreC = nomCam + (contCam += 1)%>"  type="text" class="form-control"  id="<%=nombreC%>" size="5" maxlength="5" onkeypress="return handleEnter(this, event);" value="<%=rset.getString(nombreC)%>"  />
                             <%out.print(nombreC);%></label> 
                             </label></td>
                         <td class="style58">&nbsp;</td>
@@ -779,11 +779,11 @@
                         <td class="style58">Horario de atenci&oacute;n</td>
                         <td><p>&nbsp;</p>
                             <div align="left"><span class="style58">De:</span>
-                                <input name="<%=nombreC = nomCam + (contCam += 1)%>" type="text" class="form-control"  id="<%=nombreC%>" size="7" maxlength="7" />
+                                <input name="<%=nombreC = nomCam + (contCam += 1)%>" type="text" class="form-control"  id="<%=nombreC%>" size="7" maxlength="7" value="<%=rset.getString(nombreC)%>"  />
                                 <%out.print(nombreC);%>
                                 <br />
                                 <strong>A:
-                                    <input name="<%=nombreC = nomCam + (contCam += 1)%>"  class="form-control" type="text" id="<%=nombreC%>" size="7" maxlength="7" />
+                                    <input name="<%=nombreC = nomCam + (contCam += 1)%>"  class="form-control" type="text" id="<%=nombreC%>" size="7" maxlength="7" value="<%=rset.getString(nombreC)%>"  />
                                     <%out.print(nombreC);%>
                                 </strong>
                             </div>
@@ -1332,4 +1332,4 @@
     var TODAY = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
     //---------------   END LOCALIZEABLE   ---------------
 
-    //<script language="javascript" src="list02.js"></script>/
+    //<script language="javascript" src="list02.js"></script>
