@@ -42,9 +42,9 @@ public class ConectionDB {
     //(meter los datos correspondientes)
     public ConectionDB() {
         //poner los datos apropiados
-        this.usuario = "usr_censv";
-        this.clave = "FF7CbPfkfW";
-        this.url = "jdbc:mysql://162.209.67.250:3306/censos_vera";
+        this.usuario = "root";
+        this.clave = "eve9397";
+        this.url = "jdbc:mysql://localhost:3306/censos_chia";
         this.driverClassName = "org.gjt.mm.mysql.Driver";
     
     }
@@ -121,6 +121,7 @@ public class ConectionDB {
    
     
     public void actualizar(String actualiza) throws SQLException {
+        System.out.println(actualiza);
         this.estancia = (Statement) conn.createStatement();
         estancia.executeUpdate(actualiza);
         //this.conn.commit();
@@ -136,6 +137,7 @@ public class ConectionDB {
     }
  
     public int insertar(String inserta) throws SQLException {
+        System.out.println(inserta);
         Statement st = (Statement) this.conn.createStatement();
         return st.executeUpdate(inserta);
     }   

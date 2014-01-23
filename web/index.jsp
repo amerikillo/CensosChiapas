@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ingreso Censos Veracruz</title>
+    <title>Ingreso Censos Chiapas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -33,7 +33,7 @@
           <div class="col-md-4">.col-md-4</div>
       </div-->
          
-      <form name ="form" id="forma-login" class="marco" action="/CensosVer/login" method="post" >
+      <form name ="form" id="forma-login" class="marco" action="login" method="post" >
         <!--label for="username" class="uname" data-icon="u" > Your email or username </label-->
        <div class="row">
         <div class="col-md-4"><img src="imagenes/GNKL_Small.JPG" ></div>
