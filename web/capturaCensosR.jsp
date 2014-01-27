@@ -1025,7 +1025,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                 </form>      
 
                 <td colspan="7" class="style47">
-                    <strong class="neg">DERECHOS RESERVADOS GNKL/DESARROLLOS WEB &reg; 2009 - 2013</strong></td>
+                    <strong class="neg">DERECHOS RESERVADOS GNKL/DESARROLLOS WEB &reg; 2009 - 2014</strong></td>
                 </tr>
                 <!-- 
                                                                Mensaje de Acerca de...

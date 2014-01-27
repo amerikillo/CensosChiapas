@@ -125,7 +125,7 @@
         <td colspan="3" align="center"></td>
       </tr>
       <tr>
-        <td colspan="3" align="center"><strong class="neg">DERECHOS RESERVADOS GNKL/DESARROLLOS WEB &reg; 2009 - 2013</strong></td>
+        <td colspan="3" align="center"><strong class="neg">DERECHOS RESERVADOS GNKL/DESARROLLOS WEB &reg; 2009 - 2014</strong></td>
       </tr>
     </table></td>
   </tr>

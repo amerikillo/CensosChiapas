@@ -175,7 +175,7 @@
                     <a href="#c"><input name="c" id="btn_cc" data-toggle="tooltip" title="C. FARMACIA" type="button" data-loading-text="Loading..." class="btn btn-primary" value="C" /></a>
                     <a href="#d"><input name="d" id="btn_dd" data-toggle="tooltip" title="D. ALMACÉN" type="button" data-loading-text="Loading..." class="btn btn-primary" value="D" /></a>
                     <a href="#e"><input name="e" id="btn_ee" data-toggle="tooltip" title="E. EQUIPO DE CÓMPUTO, INTERNET Y TELEFONÍA" type="button" data-loading-text="Loading..." class="btn btn-primary" value="E" /></a>
-                    <a href="#f"><input name="f" id="btn_ff" data-toggle="tooltip" title="F. DESCRIBA OBSERVACIONES Y/O COMENTARIO GENERALES" type="button" data-loading-text="Loading..." class="btn btn-primary" value="F" /></a>
+                    <a href="#f"><input name="f" id="btn_ff" data-toggle="tooltip" title="F. DESCRIBA OBSERVACIONES Y/O COMENTARIOS GENERALES" type="button" data-loading-text="Loading..." class="btn btn-primary" value="F" /></a>
                 </td>
             </tr>
             <tr>
@@ -959,7 +959,7 @@
                         <div class="panel panel-primary">
                             <a name="f" id="f"></a>
                             <!-- Default panel contents -->
-                            <div class="panel-heading">F.DESCRIBA OBSERVACIONES  Y/O COMENTARIOS GEERALES</div>
+                            <div class="panel-heading">F.DESCRIBA OBSERVACIONES Y/O COMENTARIOS GENERALES</div>
                         </div>
                     </td>
                     <td class="style58">&nbsp;</td>
@@ -1048,7 +1048,7 @@
             </form>      
 
             <td colspan="7" class="style47">
-                <strong class="neg">DERECHOS RESERVADOS GNKL/DESARROLLOS WEB &reg; 2009 - 2013</strong></td>
+                <strong class="neg">DERECHOS RESERVADOS GNKL/DESARROLLOS WEB &reg; 2009 - 2014</strong></td>
             </tr>
             <!-- 
                                                            Mensaje de Acerca de...
