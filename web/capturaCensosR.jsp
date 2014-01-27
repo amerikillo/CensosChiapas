@@ -104,7 +104,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="/CensosVer/login?ban=2">Men&uacute;</a></li>
+                    <li class="active"><a href="indexCapR.jsp">Men&uacute;</a></li>
                     <li><a data-toggle="modal" href="#myModal2">Instrucciones</a></li>
                     <li><a data-toggle="modal" href="#myModal">Sistemas</a></li>
                     <li><a href="indexCapR.jsp">Salir</a></li>
@@ -231,7 +231,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                             <strong>
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" readonly><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%></label>
+                                    <%//out.print(nombreC);%></label>
 
                             </strong>
                         </td>   
@@ -242,7 +242,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
 
                             <label>    
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>
                         </td>
                     </tr>
@@ -253,7 +253,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style58">Referencias</td>
                         <td><label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);"><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>
                         </td>
                         <td>&nbsp;</td>
@@ -262,7 +262,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td><span class="style49">
 
                                 <label>  <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%></label>
+                                    <%//out.print(nombreC);%></label>
 
                             </span></td>
                     </tr>
@@ -272,7 +272,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style33"><strong>
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" readonly ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%></label>  
+                                    <%//out.print(nombreC);%></label>  
 
                             </strong></td>
                         <td>&nbsp;</td>
@@ -281,7 +281,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td width="400"><span class="style49">
 
                                 <label>   <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%></label>  
+                                    <%//out.print(nombreC);%></label>  
                             </span></td>
                     </tr>
                     <tr>
@@ -290,14 +290,14 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style33"><strong>
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" readonly><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%></label>  
+                                    <%//out.print(nombreC);%></label>  
 
                             </strong></td>
                         <td>&nbsp;</td>
                         <td class="style58">A.8</td>
                         <td class="style58"><div align="left">Tel&eacute;fono</div></td>
                         <td class="style58"><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                            <%out.print(nombreC);%></label>  
+                            <%//out.print(nombreC);%></label>  
                         </td>
                     </tr>
                     <tr>
@@ -309,7 +309,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                             <strong>
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%></label> 
+                                    <%//out.print(nombreC);%></label> 
 
                             </strong>
                         </td>
@@ -318,7 +318,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style58"><div align="left">Correo Electr&oacute;nico</div></td>
                         <td><span class="style49">
                                 <label> <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%>
+                                    <%//out.print(nombreC);%>
                                 </label> 
                             </span>
                         </td>
@@ -329,7 +329,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style33">
                             <span class="style49">
                                 <label> <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" readonly><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%>
+                                    <%//out.print(nombreC);%>
                                 </label> 
                             </span>  
                         </td>
@@ -339,7 +339,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <span class="style49">
                                 <label> <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" readonly><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%>
+                                    <%//out.print(nombreC);%>
                                 </label> 
                             </span>  
                         </td>
@@ -350,14 +350,14 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style33"><strong>
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" readonly><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%></label> 
+                                    <%//out.print(nombreC);%></label> 
 
                             </strong></td>
                         <td class="style58">&nbsp;</td>
                         <td class="style58">A.14</td>
                         <td class="style58">N&ordm; de Modulos</td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%></label>    
+                                <%//out.print(nombreC);%></label>    
 
                             </p></td>
                     </tr>
@@ -368,7 +368,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                             <strong>
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" readonly><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%>
+                                    <%//out.print(nombreC);%>
                                 </label>
                             </strong></td>
                         <td class="style58">&nbsp;</td>
@@ -377,7 +377,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>    
 
                         </td>
@@ -389,7 +389,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                             <strong>
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%>
+                                    <%//out.print(nombreC);%>
                                 </label>
                             </strong>
                         </td>
@@ -399,7 +399,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>    
 
                         </td>
@@ -410,7 +410,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style33"><strong>
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%>
+                                    <%//out.print(nombreC);%>
                                 </label>
                             </strong></td>
                         <td class="style58">&nbsp;</td>
@@ -419,7 +419,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>    
                         </td>
                     </tr>
@@ -430,7 +430,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                             <strong>
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);"   ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%>
+                                    <%//out.print(nombreC);%>
                                 </label>
                             </strong>
                         </td>
@@ -438,7 +438,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style58">A.22</td>
                         <td class="style58">No. Mapa </td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%></label>    
+                                <%//out.print(nombreC);%></label>    
                         </td>
                     </tr>
                     <tr>
@@ -447,14 +447,14 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style33"><strong>
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%></label>   
+                                    <%//out.print(nombreC);%></label>   
 
                             </strong></td>
                         <td class="style58">&nbsp;</td>
                         <td class="style58">A.24</td>
                         <td class="style58">N&ordm; de Enfermeras</td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%></label>    
+                                <%//out.print(nombreC);%></label>    
 
                         </td>
                     </tr>
@@ -466,19 +466,19 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                                     <span class="style58">Desde:</span></label>
                                 <label for="textfield"></label>
                                 <input name="<%=nombreC = nomCam + (contCam += 1)%>"  class="form-control" type="text" id="<%=nombreC%>" size="7" maxlength="7" value="<%=rset.getString(nombreC)%>"  />
-                                <%out.print(nombreC);%></label> 
+                                <%//out.print(nombreC);%></label> 
                                 <br />
                                 <label><span class="style58">Hasta :</span></label>
                                 <input name="<%=nombreC = nomCam + (contCam += 1)%>"  class="form-control" type="text" id="<%=nombreC%>"   size="7" maxlength="7" value="<%=rset.getString(nombreC)%>"  />
                                 <label><span class="style58">&nbsp;</span>
-                                    <%out.print(nombreC);%></label>   
+                                    <%//out.print(nombreC);%></label>   
 
                             </strong></td>
                         <td class="style58">&nbsp;</td>
                         <td class="style58">A.27</td>
                         <td class="style58">Dias Laborales</td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%></label>    
+                                <%//out.print(nombreC);%></label>    
                         </td>
                     </tr>
                     <tr>
@@ -487,14 +487,14 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style33"><strong>
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%></label> 
+                                    <%//out.print(nombreC);%></label> 
 
                             </strong></td>
                         <td class="style58">&nbsp;</td>
                         <td class="style58">A.29</td>
                         <td class="style58">Cu&aacute;ntos Servicios?</td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%></label>    
+                                <%//out.print(nombreC);%></label>    
                         </td>
                     </tr>
                     <tr>
@@ -503,14 +503,14 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style33"><strong>
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%></label> 
+                                    <%//out.print(nombreC);%></label> 
 
                             </strong></td>
                         <td class="style58">&nbsp;</td>
                         <td class="style58">A.31</td>
                         <td class="style58">Clima Predeterminante</td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%></label>    
+                                <%//out.print(nombreC);%></label>    
                         </td>
                     </tr>
                     <tr>
@@ -540,7 +540,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                             <span class="style49">
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%>
+                                    <%//out.print(nombreC);%>
                                 </label>
                             </span>
                         </td>
@@ -550,7 +550,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>    
                         </td>
                     </tr>
@@ -561,7 +561,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>
                         </td>
                         <td class="style58">&nbsp;</td>
@@ -570,7 +570,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>
                         </td>
                     </tr>
@@ -581,7 +581,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%></label>  
+                                <%//out.print(nombreC);%></label>  
                         </td>
                         <td class="style58">&nbsp;</td>
                         <td class="style58"><div align="center">B.6</div></td>
@@ -589,7 +589,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td> 
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>
                         </td>
                     </tr>
@@ -601,14 +601,14 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>  
                         </td>
                         <td class="style58">&nbsp;</td>
                         <td class="style58"><div align="center">B.8</div></td>
                         <td class="style58">Procedimiento de Reposici&oacute;n de Inventarios </td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%></label></td>
+                                <%//out.print(nombreC);%></label></td>
                     </tr>
                     <tr>
                         <td class="style58"><div align="center">B.9</div></td>
@@ -616,7 +616,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>  
                         </td>
                         <td class="style58">&nbsp;</td>
@@ -625,7 +625,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>
                         </td>
                     </tr>
@@ -635,14 +635,14 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>
                         </td>
                         <td class="style58">&nbsp;</td>
                         <td class="style58"><div align="center">B.12</div></td>
                         <td class="style58">Se realizan inventarios en la unidad? </td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%></label></td>
+                                <%//out.print(nombreC);%></label></td>
                     </tr>
                     <tr>
                         <td class="style58"><div align="center">B.13</div></td>
@@ -650,7 +650,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>  
                         </td>
                         <td class="style58">&nbsp;</td>
@@ -659,7 +659,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>
                         </td>
                     </tr>
@@ -689,7 +689,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td><span class="style58">
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%>
+                                    <%//out.print(nombreC);%>
                                 </label>   
                             </span>
                         </td>
@@ -697,7 +697,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style58"><div align="center">C.2</div></td>
                         <td class="style58">La farmacia se encuentra dentro del Consultorio?</td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>    
                         </td>
                     </tr>
@@ -710,11 +710,11 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style58">Horario de atenci&oacute;n</td>
                         <td><span class="style58">De:</span>
                             <input name="<%=nombreC = nomCam + (contCam += 1)%>" type="text" class="form-control"  id="<%=nombreC%>" size="5" maxlength="5" onkeypress="return handleEnter(this, event);" value="<%=rset.getString(nombreC)%>"  />
-                            <%out.print(nombreC);%></label> 
+                            <%//out.print(nombreC);%></label> 
                             <br />
                             <span class="style58">A:</span>
                             <input name="<%=nombreC = nomCam + (contCam += 1)%>"  type="text" class="form-control"  id="<%=nombreC%>" size="5" maxlength="5" onkeypress="return handleEnter(this, event);" value="<%=rset.getString(nombreC)%>"  />
-                            <%out.print(nombreC);%></label> 
+                            <%//out.print(nombreC);%></label> 
                             </label></td>
                         <td class="style58">&nbsp;</td>
                         <td class="style58"><div align="center">C.4</div></td>
@@ -722,7 +722,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>    
                         </td>
                     </tr>
@@ -732,14 +732,14 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td>
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>  
                         </td>
                         <td class="style58">&nbsp;</td>
                         <td class="style58"><div align="center">C.6</div></td>
                         <td class="style58">Espacio aprox en mts2 de la Farmacia </td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>    
                         </td>
                     </tr>
@@ -748,13 +748,13 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style58">Se cuenta con red fr&iacute;a?</td>
                         <td class="style58"><label>
                                 <label>  <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%></label> 
+                                    <%//out.print(nombreC);%></label> 
                         </td>
                         <td class="style58">&nbsp;</td>
                         <td class="style58"><div align="center" class="style58">C.8</div></td>
                         <td class="style58">Fecha de Ultima Visita Proveedor Actual</td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>
                         </td>
                     </tr>
@@ -785,7 +785,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style58"><div align="center">D.1</div></td>
                         <td class="style58">Se cuenta con &aacute;rea de almac&eacute;n?</td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label>
                         </td>
                         <td class="style58">&nbsp;</td>
@@ -794,11 +794,11 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td><p>&nbsp;</p>
                             <div align="left"><span class="style58">De:</span>
                                 <input name="<%=nombreC = nomCam + (contCam += 1)%>" type="text" class="form-control"  id="<%=nombreC%>" size="7" maxlength="7" value="<%=rset.getString(nombreC)%>"  />
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                                 <br />
                                 <strong>A:
                                     <input name="<%=nombreC = nomCam + (contCam += 1)%>"  class="form-control" type="text" id="<%=nombreC%>" size="7" maxlength="7" value="<%=rset.getString(nombreC)%>"  />
-                                    <%out.print(nombreC);%>
+                                    <%//out.print(nombreC);%>
                                 </strong>
                             </div>
                         </td>
@@ -807,26 +807,26 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td class="style58"><div align="center">D.3</div></td>
                         <td class="style58">Espacio aprox en mts2 del Almac&eacute;n</td>
                         <td><label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%></label>    
+                                <%//out.print(nombreC);%></label>    
                         </td>
                         <td class="style58">&nbsp;</td>
                         <td class="style58"><div align="center">D.4</div></td>
                         <td class="style58">N&uacute;mero de Anaqueles o Racks en Almacen</td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%></label>    
+                                <%//out.print(nombreC);%></label>    
                         </td>
                     </tr>
                     <tr>
                         <td class="style58"><div align="center">D.5</div></td>
                         <td class="style58">C&oacute;mo surten los Insumos M&eacute;dicos en el Almac&eacute;n?</td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%></label>    
+                                <%//out.print(nombreC);%></label>    
                         </td>
                         <td class="style58">&nbsp;</td>
                         <td class="style58"><div align="center">D.6</div></td>
                         <td class="style58">Cuentan con Anden para carga y descarga en el Almac&eacute;n?</td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%></label>    
+                                <%//out.print(nombreC);%></label>    
                         </td>
                     </tr>
                     <tr>
@@ -835,7 +835,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td width="369" class="style58">
                             <label>
                                 <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label> 
                         </td>
                         <td class="style58">&nbsp;</td>
@@ -875,7 +875,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         <td bgcolor="#FFFFFF" class="style58"> <strong class="neg">Se cuenta con equipo de C&oacute;mputo?</strong></td>
                         <td class="style58">
                             <label>  <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                <%out.print(nombreC);%>
+                                <%//out.print(nombreC);%>
                             </label> 
                         </td>
                         <td class="style58"></td>
@@ -894,7 +894,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                                             <p>
                                                 <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3"  class="form-control" />
                                                 <strong class="neg">CPU</strong></p>
-                                                <%out.print(nombreC);%>
+                                                <%//out.print(nombreC);%>
                                         </div>
                                     </div>
                                 </td>
@@ -904,7 +904,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                                             <p>
                                                 <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3" class="form-control" />
                                                 <strong class="neg">Monitor</strong>           </p>
-                                                <%out.print(nombreC);%>
+                                                <%//out.print(nombreC);%>
                                         </div>
                                     </div>
                                 </td>
@@ -914,7 +914,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                                             <p>
                                                 <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3"  class="form-control" />
                                                 <strong class="neg">Impresora</strong>                </p>
-                                                <%out.print(nombreC);%>
+                                                <%//out.print(nombreC);%>
                                         </div>
                                     </div>
                                 </td>
@@ -924,7 +924,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                                             <p>
                                                 <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3" class="form-control" />
                                                 <strong class="neg">No-Break</strong></p>
-                                                <%out.print(nombreC);%>
+                                                <%//out.print(nombreC);%>
                                         </div>
                                     </div>
                                 </td>
@@ -941,7 +941,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                             <td class="style58">
                                 <span class="style47">
                                     <label> <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                        <%out.print(nombreC);%>
+                                        <%//out.print(nombreC);%>
                                     </label>
                                 </span>
                             </td>
@@ -954,7 +954,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                             <td> 
                                 <label>
                                     <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%>
+                                    <%//out.print(nombreC);%>
                                 </label>    
                             </td>
                         </tr>
@@ -967,7 +967,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                             <td bgcolor="#FFFFFF" class="style58">&iquest;Cu&aacute;l (es)?</td>
                             <td class="style58">
                                 <label> <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                    <%out.print(nombreC);%></label> 
+                                    <%//out.print(nombreC);%></label> 
                             </td>
                             <td class="style58">&nbsp;</td>
                         </tr>   
@@ -999,7 +999,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                                                 <span class="style58">
                                                     <strong>
                                                         <label>  <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="140" rows="10" class="form-control style58" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
-                                                            <%out.print(nombreC);%>
+                                                            <%//out.print(nombreC);%>
                                                         </label>
                                                     </strong>
                                                 </span>
