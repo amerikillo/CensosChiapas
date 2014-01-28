@@ -11,7 +11,7 @@
  Target Server Version : 50615
  File Encoding         : utf-8
 
- Date: 01/23/2014 17:33:03 PM
+ Date: 01/28/2014 07:45:39 AM
 */
 
 SET NAMES utf8;
@@ -28,13 +28,13 @@ CREATE TABLE `entradas` (
 	`hora` time NOT NULL,
 	`status` int(10) NOT NULL,
 	PRIMARY KEY (`id`)
-) ENGINE=`InnoDB` AUTO_INCREMENT=74 DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ROW_FORMAT=COMPACT COMMENT='' CHECKSUM=0 DELAY_KEY_WRITE=0;
+) ENGINE=`InnoDB` AUTO_INCREMENT=77 DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ROW_FORMAT=COMPACT COMMENT='' CHECKSUM=0 DELAY_KEY_WRITE=0;
 
 -- ----------------------------
 --  Records of `entradas`
 -- ----------------------------
 BEGIN;
-INSERT INTO `entradas` VALUES ('1', 'ricardo', '2013-11-06', '00:00:00', '0'), ('2', 'r', '2013-11-07', '01:30:14', '0'), ('3', 'ricardo', '2013-11-07', '01:30:21', '1'), ('4', '', '2013-11-07', '01:33:30', '0'), ('5', 'ricardo', '2013-11-07', '01:33:37', '1'), ('6', 'ricardo', '2013-11-07', '02:55:07', '1'), ('7', 'ricardo', '2013-11-07', '03:08:20', '1'), ('8', '', '2013-11-07', '05:05:12', '0'), ('9', 'ricardo', '2013-11-07', '05:05:19', '1'), ('10', '', '2013-11-08', '10:44:55', '0'), ('11', 'ricardo', '2013-11-08', '10:45:04', '1'), ('12', 'ricardo', '2013-11-08', '12:38:49', '1'), ('13', 'ricardo', '2013-11-08', '12:57:42', '1'), ('14', 'ricardo', '2013-11-08', '12:58:14', '1'), ('15', 'ricardo', '2013-11-08', '03:54:35', '1'), ('16', '', '2013-11-14', '10:00:16', '0'), ('17', 'sistemas', '2013-11-14', '10:00:24', '1'), ('18', 'sistemas', '2013-11-14', '10:35:40', '1'), ('19', 'sistemas', '2013-11-14', '10:51:46', '1'), ('20', '', '2013-11-14', '10:52:30', '0'), ('21', 'sistemas', '2013-11-14', '10:52:36', '1'), ('22', 'sistemas', '2013-11-14', '10:59:09', '0'), ('23', 'sistemas', '2013-11-14', '10:59:16', '1'), ('24', 'sistemas', '2013-11-14', '11:08:48', '1'), ('25', 'ricardo', '2013-11-14', '02:12:43', '1'), ('26', 'ricardo', '2013-11-14', '06:01:16', '1'), ('27', 'ricardo', '2013-11-14', '10:37:43', '1'), ('28', 'ricardo', '2013-11-14', '11:24:39', '1'), ('29', 'ricardo', '2013-11-15', '03:52:04', '1'), ('30', 'ricardo', '2013-11-15', '08:28:22', '1'), ('31', 'ricardo', '2013-11-15', '08:42:51', '1'), ('32', 'ricardo', '2013-11-16', '01:13:39', '1'), ('33', 'ricardo', '2014-01-09', '05:40:47', '1'), ('34', 'ricardo', '2014-01-09', '05:41:51', '1'), ('35', 'ricardo', '2014-01-09', '05:49:48', '1'), ('36', 'ricardo', '2014-01-09', '05:55:52', '1'), ('37', 'ricardo', '2014-01-10', '10:37:38', '1'), ('38', 'ricardo', '2014-01-10', '10:54:06', '1'), ('39', '', '2014-01-10', '11:55:53', '0'), ('40', 'ricardo', '2014-01-10', '11:57:14', '1'), ('41', 'ricardo', '2014-01-11', '12:53:48', '1'), ('42', 'ricardo', '2014-01-11', '09:13:39', '1'), ('43', 'ricardo', '2014-01-16', '01:35:40', '1'), ('44', 'ricardo', '2014-01-16', '02:01:43', '1'), ('45', 'ricardo', '2014-01-16', '03:24:16', '1'), ('46', 'ricardo', '2014-01-16', '03:37:00', '1'), ('47', 'RICARDO', '2014-01-16', '03:46:34', '1'), ('48', 'ricardo', '2014-01-16', '03:47:31', '1'), ('49', 'ricardo', '2014-01-17', '10:33:39', '1'), ('50', 'ricardo', '2014-01-17', '10:37:09', '1'), ('51', 'ricardo', '2014-01-17', '10:38:12', '1'), ('52', 'ricardo', '2014-01-17', '03:25:56', '1'), ('53', 'ricardo', '2014-01-20', '11:06:10', '1'), ('54', 'ricardo', '2014-01-20', '11:20:35', '1'), ('55', 'ricardo', '2014-01-21', '08:29:57', '1'), ('56', 'ricardo', '2014-01-21', '08:30:36', '1'), ('57', 'ricardo', '2014-01-21', '12:17:46', '1'), ('58', 'ricado', '2014-01-21', '12:20:01', '0'), ('59', 'ricardo', '2014-01-21', '12:32:24', '1'), ('60', 'ricardo', '2014-01-21', '12:33:41', '1'), ('61', 'admin', '2014-01-21', '12:40:53', '0'), ('62', 'ricardo', '2014-01-21', '12:41:00', '1'), ('63', 'ricardo', '2014-01-21', '12:42:24', '1'), ('64', 'ricardo', '2014-01-21', '12:42:38', '1'), ('65', 'ricardo', '2014-01-21', '12:48:30', '1'), ('66', 'ricardo', '2014-01-21', '04:13:16', '1'), ('67', 'ricardo', '2014-01-21', '04:38:36', '1'), ('68', 'ricardo', '2014-01-23', '10:43:28', '1'), ('69', 'ricardo', '2014-01-23', '12:40:50', '1'), ('70', 'ricardo', '2014-01-23', '12:56:02', '1'), ('71', 'ricardo', '2014-01-23', '01:01:58', '1'), ('72', 'ricardo', '2014-01-23', '01:03:50', '1'), ('73', 'ricardo', '2014-01-23', '03:59:42', '1');
+INSERT INTO `entradas` VALUES ('1', 'ricardo', '2013-11-06', '00:00:00', '0'), ('2', 'r', '2013-11-07', '01:30:14', '0'), ('3', 'ricardo', '2013-11-07', '01:30:21', '1'), ('4', '', '2013-11-07', '01:33:30', '0'), ('5', 'ricardo', '2013-11-07', '01:33:37', '1'), ('6', 'ricardo', '2013-11-07', '02:55:07', '1'), ('7', 'ricardo', '2013-11-07', '03:08:20', '1'), ('8', '', '2013-11-07', '05:05:12', '0'), ('9', 'ricardo', '2013-11-07', '05:05:19', '1'), ('10', '', '2013-11-08', '10:44:55', '0'), ('11', 'ricardo', '2013-11-08', '10:45:04', '1'), ('12', 'ricardo', '2013-11-08', '12:38:49', '1'), ('13', 'ricardo', '2013-11-08', '12:57:42', '1'), ('14', 'ricardo', '2013-11-08', '12:58:14', '1'), ('15', 'ricardo', '2013-11-08', '03:54:35', '1'), ('16', '', '2013-11-14', '10:00:16', '0'), ('17', 'sistemas', '2013-11-14', '10:00:24', '1'), ('18', 'sistemas', '2013-11-14', '10:35:40', '1'), ('19', 'sistemas', '2013-11-14', '10:51:46', '1'), ('20', '', '2013-11-14', '10:52:30', '0'), ('21', 'sistemas', '2013-11-14', '10:52:36', '1'), ('22', 'sistemas', '2013-11-14', '10:59:09', '0'), ('23', 'sistemas', '2013-11-14', '10:59:16', '1'), ('24', 'sistemas', '2013-11-14', '11:08:48', '1'), ('25', 'ricardo', '2013-11-14', '02:12:43', '1'), ('26', 'ricardo', '2013-11-14', '06:01:16', '1'), ('27', 'ricardo', '2013-11-14', '10:37:43', '1'), ('28', 'ricardo', '2013-11-14', '11:24:39', '1'), ('29', 'ricardo', '2013-11-15', '03:52:04', '1'), ('30', 'ricardo', '2013-11-15', '08:28:22', '1'), ('31', 'ricardo', '2013-11-15', '08:42:51', '1'), ('32', 'ricardo', '2013-11-16', '01:13:39', '1'), ('33', 'ricardo', '2014-01-09', '05:40:47', '1'), ('34', 'ricardo', '2014-01-09', '05:41:51', '1'), ('35', 'ricardo', '2014-01-09', '05:49:48', '1'), ('36', 'ricardo', '2014-01-09', '05:55:52', '1'), ('37', 'ricardo', '2014-01-10', '10:37:38', '1'), ('38', 'ricardo', '2014-01-10', '10:54:06', '1'), ('39', '', '2014-01-10', '11:55:53', '0'), ('40', 'ricardo', '2014-01-10', '11:57:14', '1'), ('41', 'ricardo', '2014-01-11', '12:53:48', '1'), ('42', 'ricardo', '2014-01-11', '09:13:39', '1'), ('43', 'ricardo', '2014-01-16', '01:35:40', '1'), ('44', 'ricardo', '2014-01-16', '02:01:43', '1'), ('45', 'ricardo', '2014-01-16', '03:24:16', '1'), ('46', 'ricardo', '2014-01-16', '03:37:00', '1'), ('47', 'RICARDO', '2014-01-16', '03:46:34', '1'), ('48', 'ricardo', '2014-01-16', '03:47:31', '1'), ('49', 'ricardo', '2014-01-17', '10:33:39', '1'), ('50', 'ricardo', '2014-01-17', '10:37:09', '1'), ('51', 'ricardo', '2014-01-17', '10:38:12', '1'), ('52', 'ricardo', '2014-01-17', '03:25:56', '1'), ('53', 'ricardo', '2014-01-20', '11:06:10', '1'), ('54', 'ricardo', '2014-01-20', '11:20:35', '1'), ('55', 'ricardo', '2014-01-21', '08:29:57', '1'), ('56', 'ricardo', '2014-01-21', '08:30:36', '1'), ('57', 'ricardo', '2014-01-21', '12:17:46', '1'), ('58', 'ricado', '2014-01-21', '12:20:01', '0'), ('59', 'ricardo', '2014-01-21', '12:32:24', '1'), ('60', 'ricardo', '2014-01-21', '12:33:41', '1'), ('61', 'admin', '2014-01-21', '12:40:53', '0'), ('62', 'ricardo', '2014-01-21', '12:41:00', '1'), ('63', 'ricardo', '2014-01-21', '12:42:24', '1'), ('64', 'ricardo', '2014-01-21', '12:42:38', '1'), ('65', 'ricardo', '2014-01-21', '12:48:30', '1'), ('66', 'ricardo', '2014-01-21', '04:13:16', '1'), ('67', 'ricardo', '2014-01-21', '04:38:36', '1'), ('68', 'ricardo', '2014-01-23', '10:43:28', '1'), ('69', 'ricardo', '2014-01-23', '12:40:50', '1'), ('70', 'ricardo', '2014-01-23', '12:56:02', '1'), ('71', 'ricardo', '2014-01-23', '01:01:58', '1'), ('72', 'ricardo', '2014-01-23', '01:03:50', '1'), ('73', 'ricardo', '2014-01-23', '03:59:42', '1'), ('74', 'ricardo', '2014-01-27', '01:33:41', '1'), ('75', 'ricardo', '2014-01-27', '03:57:26', '1'), ('76', 'ricardo', '2014-01-27', '04:38:21', '1');
 COMMIT;
 
 -- ----------------------------
@@ -79,6 +79,13 @@ CREATE TABLE `tb_a` (
 ) ENGINE=`InnoDB` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ROW_FORMAT=COMPACT COMMENT='' CHECKSUM=0 DELAY_KEY_WRITE=0;
 
 -- ----------------------------
+--  Records of `tb_a`
+-- ----------------------------
+BEGIN;
+INSERT INTO `tb_a` VALUES ('1001', 'CSR CRUZ CHIQUITA', '', '', '', 'ACALA', '', 'CSSSA000062', '', '', '', 'JURISDICCION SANITARIA 1', 'CHIAPAS', 'ACALA', '', 'CASA DE SALUD', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
+COMMIT;
+
+-- ----------------------------
 --  Table structure for `tb_b`
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_b`;
@@ -103,6 +110,13 @@ CREATE TABLE `tb_b` (
 ) ENGINE=`InnoDB` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ROW_FORMAT=COMPACT COMMENT='' CHECKSUM=0 DELAY_KEY_WRITE=0;
 
 -- ----------------------------
+--  Records of `tb_b`
+-- ----------------------------
+BEGIN;
+INSERT INTO `tb_b` VALUES ('1001', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
+COMMIT;
+
+-- ----------------------------
 --  Table structure for `tb_c`
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_c`;
@@ -120,6 +134,13 @@ CREATE TABLE `tb_c` (
 	PRIMARY KEY (`id_uni`),
 	CONSTRAINT `tb_c_ibfk_1` FOREIGN KEY (`id_uni`) REFERENCES `tb_unidades` (`id_uni`)   ON UPDATE CASCADE ON DELETE CASCADE
 ) ENGINE=`InnoDB` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ROW_FORMAT=COMPACT COMMENT='' CHECKSUM=0 DELAY_KEY_WRITE=0;
+
+-- ----------------------------
+--  Records of `tb_c`
+-- ----------------------------
+BEGIN;
+INSERT INTO `tb_c` VALUES ('1001', '', '', '', '', '', '', '', '', '');
+COMMIT;
 
 -- ----------------------------
 --  Table structure for `tb_d`
@@ -140,6 +161,13 @@ CREATE TABLE `tb_d` (
 ) ENGINE=`InnoDB` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ROW_FORMAT=COMPACT COMMENT='' CHECKSUM=0 DELAY_KEY_WRITE=0;
 
 -- ----------------------------
+--  Records of `tb_d`
+-- ----------------------------
+BEGIN;
+INSERT INTO `tb_d` VALUES ('1001', '', '', '', '', '', '', '', '');
+COMMIT;
+
+-- ----------------------------
 --  Table structure for `tb_e`
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_e`;
@@ -158,15 +186,29 @@ CREATE TABLE `tb_e` (
 ) ENGINE=`InnoDB` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ROW_FORMAT=COMPACT COMMENT='' CHECKSUM=0 DELAY_KEY_WRITE=0;
 
 -- ----------------------------
+--  Records of `tb_e`
+-- ----------------------------
+BEGIN;
+INSERT INTO `tb_e` VALUES ('1001', '', '', '', '', '', '', '', '');
+COMMIT;
+
+-- ----------------------------
 --  Table structure for `tb_f`
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_f`;
 CREATE TABLE `tb_f` (
 	`id_uni` varchar(10) NOT NULL,
-	`campo_71` varchar(30) NOT NULL DEFAULT '',
+	`campo_71` longtext NOT NULL,
 	PRIMARY KEY (`id_uni`),
 	CONSTRAINT `tb_f_ibfk_1` FOREIGN KEY (`id_uni`) REFERENCES `tb_unidades` (`id_uni`)   ON UPDATE CASCADE ON DELETE CASCADE
 ) ENGINE=`InnoDB` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ROW_FORMAT=COMPACT COMMENT='' CHECKSUM=0 DELAY_KEY_WRITE=0;
+
+-- ----------------------------
+--  Records of `tb_f`
+-- ----------------------------
+BEGIN;
+INSERT INTO `tb_f` VALUES ('1001', 'DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014DERECHOS RESERVADOS GNKL/DESARROLLOS WEB ® 2009 - 2014');
+COMMIT;
 
 -- ----------------------------
 --  Table structure for `tb_unidades`

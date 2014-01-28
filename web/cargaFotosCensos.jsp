@@ -101,7 +101,7 @@
 
              <form method="post" class="marco"  action="FileUploadServlet" enctype="multipart/form-data" name="form1"> 
                <br>
-               <div class="col-lg-2"><a href="indexCap.jsp">Regresar</a></div>
+               <div class="col-lg-2"><a href="indexCapR.jsp">Regresar</a></div>
                 <div class="col-lg-8"><h4>Datos de la Unidad a Censar</h4></div>
                 <div class="row">
                     <div class="col-md-6">

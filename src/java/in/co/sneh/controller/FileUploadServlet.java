@@ -59,7 +59,7 @@ public class FileUploadServlet extends HttpServlet {
             }catch(FileUploadException fue){
                 fue.printStackTrace();
             }
-            response.sendRedirect("indexCap.jsp");
+            response.sendRedirect("indexCapR.jsp");
         }
     }
 }  
