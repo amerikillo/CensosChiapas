@@ -492,7 +492,7 @@
                     <td colspan="7" class="style58">
                         <div class="panel panel-primary">
                             <!-- Default panel contents -->
-                            <button type="submit" name="guarda_seccion" value="A" class="btn btn-primary btn-lg btn-block" onclick="return validar_a()">Guardar datos Secci&oacute;n A</button>
+                            <!--button type="submit" name="guarda_seccion" value="A" class="btn btn-primary btn-lg btn-block" onclick="return validar_a()">Guardar datos Secci&oacute;n A</button-->
                         </div>
                     </td>
                 </tr>               
@@ -642,7 +642,7 @@
                         <div class="panel panel-primary">
                             <a name="b" id="b"></a>
                             <!-- Default panel contents -->
-                            <button type="submit" name="guarda_seccion" value="B" class="btn btn-primary btn-lg btn-block" onclick="return validar_b()">Guardar datos Secci&oacute;n B</button>
+                            <!--button type="submit" name="guarda_seccion" value="B" class="btn btn-primary btn-lg btn-block" onclick="return validar_b()">Guardar datos Secci&oacute;n B</button-->
                         </div>
                     </td>
                 </tr>
@@ -739,7 +739,7 @@
                         <div class="panel panel-primary">
                             <a name="c" id="c"></a>
                             <!-- Default panel contents -->
-                            <button type="submit" name="guarda_seccion" value="C" class="btn btn-primary btn-lg btn-block" onclick="return validar_c()">Guardar datos Secci&oacute;n C</button>
+                            <!--button type="submit" name="guarda_seccion" value="C" class="btn btn-primary btn-lg btn-block" onclick="return validar_c()">Guardar datos Secci&oacute;n C</button-->
                         </div>
                     </td>
 
@@ -824,7 +824,7 @@
                         <div class="panel panel-primary">
                             <a name="d" id="d"></a>
                             <!-- Default panel contents -->
-                            <button type="submit" name="guarda_seccion" value="D" class="btn btn-primary btn-lg btn-block" onclick="return validar_d()">Guardar datos Secci&oacute;n D</button>
+                            <!--button type="submit" name="guarda_seccion" value="D" class="btn btn-primary btn-lg btn-block" onclick="return validar_d()">Guardar datos Secci&oacute;n D</button-->
                         </div>
                     </td>
                 </tr>   
@@ -950,7 +950,7 @@
                         <div class="panel panel-primary">
                             <a name="d" id="d"></a>
                             <!-- Default panel contents -->
-                            <button type="submit" name="guarda_seccion" value="E" class="btn btn-primary btn-lg btn-block" onclick="return validar_e()">Guardar datos Secci&oacute;n E</button>
+                            <!--button type="submit" name="guarda_seccion" value="E" class="btn btn-primary btn-lg btn-block" onclick="return validar_e()">Guardar datos Secci&oacute;n E</button-->
                         </div>
                     </td>
                 </tr>   
@@ -990,7 +990,7 @@
                             <div class="panel panel-primary">
                                 <a name="d" id="d"></a>
                                 <!-- Default panel contents -->
-                                <button type="submit" name="guarda_seccion" value="F" class="btn btn-primary btn-lg btn-block" onclick="return validar_f()">Guardar datos Secci&oacute;n F</button>
+                                <!--button type="submit" name="guarda_seccion" value="F" class="btn btn-primary btn-lg btn-block" onclick="return validar_f()">Guardar datos Secci&oacute;n F</button-->
                             </div>
                         </td>
                     </tr>

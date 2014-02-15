@@ -76,7 +76,7 @@ public class CorreoGmail extends HttpServlet {
                 new InternetAddress(cuenta_correo));//Aqui se pone la direccion a donde se enviara el correo
             message.setSubject("Recibimos su Información / GNK Logística");
             message.setText(
-                "Recibimos sus comentarios, gracias por utilizar el Sistema de Censos Veracruz, seguiremos en contacto. \n GNK Logística SA de CV - Desarrollos WEB 2013");
+                "Recibimos sus comentarios, gracias por utilizar el Sistema de Censos Chiapas, seguiremos en contacto. \n GNK Logística SA de CV - Desarrollos WEB 2014");
 
             // Lo enviamos.
             Transport t = session.getTransport("smtp");
