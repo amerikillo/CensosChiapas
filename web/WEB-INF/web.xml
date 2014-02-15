@@ -16,6 +16,14 @@
         <servlet-name>FileUploadServlet</servlet-name>
         <servlet-class>in.co.sneh.controller.FileUploadServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>correoGmail</servlet-name>
+        <servlet-class>servletCorreo.correoGmail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>correoGmail</servlet-name>
+        <url-pattern>/servletCorreo</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>FileUploadServlet</servlet-name>
         <url-pattern>/FileUploadServlet</url-pattern>
@@ -31,14 +39,6 @@
     <servlet-mapping>
         <servlet-name>GuardaSeccion</servlet-name>
         <url-pattern>/GuardaSeccion</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>CorreoGmail</servlet-name>
-        <servlet-class>servletCorreo.CorreoGmail</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>CorreoGmail</servlet-name>
-        <url-pattern>/servletCorreo</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CapturaCensos</servlet-name>

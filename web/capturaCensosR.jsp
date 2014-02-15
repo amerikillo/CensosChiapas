@@ -1022,7 +1022,15 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         </tr>
 
 
-                </form>      
+                </form>
+                                                        <%
+        }
+    } catch (Exception e) {
+        out.println("Hola");
+        out.println(e.getMessage());
+    }
+    con.cierraConexion();
+%>
 
                 <td colspan="7" class="style47">
                     <strong class="neg">DERECHOS RESERVADOS GNKL/DESARROLLOS WEB &reg; 2009 - 2014</strong></td>
@@ -1086,14 +1094,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
         </table>
     </body>
 </html>
-<%
-        }
-    } catch (Exception e) {
-        out.println("Hola");
-        out.println(e.getMessage());
-    }
-    con.cierraConexion();
-%>
+
 
 <script type="text/javascript">
     function validar_a() {
@@ -1275,7 +1276,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
             else {
                 var dataString = $('#form_com').serialize();
                 //alert('Datos serializados: '+dataString);
-                var dir = '/CensosVer/servletCorreo';
+                var dir = '/CensosChiapas/servletCorreo';
 
                 $.ajax({
                     url: dir,

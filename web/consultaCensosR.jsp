@@ -1043,7 +1043,11 @@
                             <div align="rigth"><a href="#top">Ir hacia Arriba</a></div>   
                         </td>
                     </tr>
+                    <%
+                        }
 
+                        con.cierraConexion();
+                    %>
 
             </form>      
 
@@ -1087,15 +1091,16 @@
                         </div>
                         <div class="modal-body">
                             <form name="form_com" method="post" id="form_com">
-                                Nombre: <input type="text" class="form-control" autofocus placeholder="Ingrese su Nombre" name="txtf_nom" id="txtf_nom" />
-                                Cuenta de Correo: <input type="text" class="form-control"  placeholder="Ingrese su Cuenta de Correo" name="txtf_cor" id="txtf_cor" onblur="validarEmail(this.form.txtf_cor.value);" />
-                                Deje su Comentario: <textarea name="txta_com" cols="10" rows="5" class="form-control" id="txta_com"></textarea>
-                                <div class="modal-footer">
+                            Nombre: <input type="text" class="form-control" autofocus placeholder="Ingrese su Nombre" name="txtf_nom" id="txtf_nom" />
+                            Cuenta de Correo: <input type="text" class="form-control"  placeholder="Ingrese su Cuenta de Correo" name="txtf_cor" id="txtf_cor" onblur="validarEmail(this.form.txtf_cor.value);" />
+                            Deje su Comentario: <textarea name="txta_com" cols="10" rows="5" class="form-control" id="txta_com"></textarea>
+                            <div class="modal-footer">
 
-                                    <input type="submit" class="btn btn-primary" value="Guardar" id="btn_com" onClick="return verificaCom(document.forms.form_com);" />
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                </div>
-                            </form>
+                                <input type="submit" class="btn btn-primary" value="Guardar" id="btn_com" onClick="return verificaCom(document.forms.form_com);" />
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+
+                        </form>
                         </div>
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
@@ -1104,11 +1109,7 @@
         <a href="#" class="scrollup">Scroll</a>
     </body>
 </html>
-<%
-    }
 
-    con.cierraConexion();
-%>
 <script type="text/javascript">
     $(document).ready(function() {
         $('#form').submit(function() {
@@ -1190,7 +1191,7 @@
             else {
                 var dataString = $('#form_com').serialize();
                 //alert('Datos serializados: '+dataString);
-                var dir = '/CensosVer/servletCorreo';
+                var dir = 'servletCorreo';
 
                 $.ajax({
                     url: dir,
