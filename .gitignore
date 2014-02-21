@@ -5,3 +5,5 @@ dist/*
 build/web/capturaCensosR.jsp
 *.xml
 *.class
+
+nbproject/private/private.xml
