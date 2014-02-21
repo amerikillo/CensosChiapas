@@ -170,13 +170,14 @@
                 <td colspan="7"  class="style43 style51"></hr></td>
             </tr>
             <tr>
-                <td colspan="3"  class="style58">Seleccione Secci&oacute;n
+                <td colspan="10"  class="style58">Seleccione Secci&oacute;n
                     <a href="#a"><input name="a" id="btn_aa" data-toggle="tooltip" title="A. DATOS GENERALES" type="button" data-loading-text="Loading..." class="btn btn-primary" value="A" /> </a>
                     <a href="#b"><input name="b" id="btn_bb" data-toggle="tooltip" title="B. TAREAS OPERACIONALES" type="button" data-loading-text="Loading..." class="btn btn-primary" value="B" /></a>
                     <a href="#c"><input name="c" id="btn_cc" data-toggle="tooltip" title="C. FARMACIA" type="button" data-loading-text="Loading..." class="btn btn-primary" value="C" /></a>
                     <a href="#d"><input name="d" id="btn_dd" data-toggle="tooltip" title="D. ALMACÉN" type="button" data-loading-text="Loading..." class="btn btn-primary" value="D" /></a>
                     <a href="#e"><input name="e" id="btn_ee" data-toggle="tooltip" title="E. EQUIPO DE CÓMPUTO, INTERNET Y TELEFONÍA" type="button" data-loading-text="Loading..." class="btn btn-primary" value="E" /></a>
                     <a href="#f"><input name="f" id="btn_ff" data-toggle="tooltip" title="F. DESCRIBA OBSERVACIONES Y/O COMENTARIOS GENERALES" type="button" data-loading-text="Loading..." class="btn btn-primary" value="F" /></a>
+                    <a href="#pic"><button name="pic" id="btn_pic" data-toggle="tooltip" title="G. PICTOGRÁFICO" type="button" data-loading-text="Loading..." class="btn btn-primary">PICTOGRÁFICO</button></a>
                 </td>
             </tr>
             <tr>
@@ -998,6 +999,7 @@
                     <tr>
                         <td colspan="10" height="">
                             <div class="blueberry" style="width: 600px; height: 500px;">
+                                <a name="pic" id="pic"></a>
                                 <ul class="slides">
                                     <%
                                         try {

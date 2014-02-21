@@ -121,9 +121,9 @@
                     <br>              
                     <button name="consultar" value="1" class="btn btn-primary btn-lg btn-block" type="submit">Consultar</button>
                 </form>
-                <form method="get" action="SubeInfo"> 
+                <!--form method="get" action="SubeInfo"> 
                     <button name="subir" value="1" class="btn btn-default btn-lg btn-block" type="submit">Subir Información</button>
-                </form>
+                </form-->
             </div>
 
             <form name ="forma-login" id="forma-login" class="marco" action="CapturaCensos" method="post" >

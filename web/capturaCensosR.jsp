@@ -17,10 +17,10 @@
         while (rset.next()) {
 %>
 <%
-DecimalFormatSymbols simbolos = new DecimalFormatSymbols();
-simbolos.setDecimalSeparator('.');
-simbolos.setGroupingSeparator(',');
-DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
+    DecimalFormatSymbols simbolos = new DecimalFormatSymbols();
+    simbolos.setDecimalSeparator('.');
+    simbolos.setGroupingSeparator(',');
+    DecimalFormat forma2 = new DecimalFormat("##,###.##", simbolos);
 %>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <!-- DW6 -->
@@ -709,11 +709,11 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                         </td>
                         <td class="style58">Horario de atenci&oacute;n</td>
                         <td><span class="style58">De:</span>
-                            <input name="<%=nombreC = nomCam + (contCam += 1)%>" type="text" class="form-control"  id="<%=nombreC%>" size="5" maxlength="5" onkeypress="return handleEnter(this, event);" value="<%=rset.getString(nombreC)%>"  />
+                            <input name="<%=nombreC = nomCam + (contCam += 1)%>" type="text" class="form-control"  id="<%=nombreC%>" size="5" maxlength="10" onkeypress="return handleEnter(this, event);" value="<%=rset.getString(nombreC)%>"  />
                             <%//out.print(nombreC);%></label> 
                             <br />
                             <span class="style58">A:</span>
-                            <input name="<%=nombreC = nomCam + (contCam += 1)%>"  type="text" class="form-control"  id="<%=nombreC%>" size="5" maxlength="5" onkeypress="return handleEnter(this, event);" value="<%=rset.getString(nombreC)%>"  />
+                            <input name="<%=nombreC = nomCam + (contCam += 1)%>"  type="text" class="form-control"  id="<%=nombreC%>" size="5" maxlength="10" onkeypress="return handleEnter(this, event);" value="<%=rset.getString(nombreC)%>"  />
                             <%//out.print(nombreC);%></label> 
                             </label></td>
                         <td class="style58">&nbsp;</td>
@@ -892,7 +892,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                                     <div align="center" class="style58">
                                         <div align="center">
                                             <p>
-                                                <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3"  class="form-control" />
+                                                <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3"  class="form-control" onkeypress="return tabular(event,this)" />
                                                 <strong class="neg">CPU</strong></p>
                                                 <%//out.print(nombreC);%>
                                         </div>
@@ -902,7 +902,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                                     <div align="center" class="style58">
                                         <div align="center">
                                             <p>
-                                                <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3" class="form-control" />
+                                                <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3" class="form-control" onkeypress="return tabular(event,this)" />
                                                 <strong class="neg">Monitor</strong>           </p>
                                                 <%//out.print(nombreC);%>
                                         </div>
@@ -912,7 +912,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                                     <div align="center" class="style58">
                                         <div align="center">
                                             <p>
-                                                <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3"  class="form-control" />
+                                                <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3"  class="form-control" onkeypress="return tabular(event,this)" />
                                                 <strong class="neg">Impresora</strong>                </p>
                                                 <%//out.print(nombreC);%>
                                         </div>
@@ -922,7 +922,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                                     <div align="center" class="style58">
                                         <div align="center">
                                             <p>
-                                                <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3" class="form-control" />
+                                                <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3" class="form-control" onkeypress="return tabular(event,this)" />
                                                 <strong class="neg">No-Break</strong></p>
                                                 <%//out.print(nombreC);%>
                                         </div>
@@ -940,7 +940,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                             <td bgcolor="#FFFFFF" class="style58">Cuenta con conexi&oacute;n a la Internet?</td>
                             <td class="style58">
                                 <span class="style47">
-                                    <label> <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
+                                    <label> <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" /><%=rset.getString(nombreC)%></textarea>
                                         <%//out.print(nombreC);%>
                                     </label>
                                 </span>
@@ -953,7 +953,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                             <td class="style58">Se&ntilde;al de Telefon&iacute;a Celular?</td>
                             <td> 
                                 <label>
-                                    <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
+                                    <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" /><%=rset.getString(nombreC)%></textarea>
                                     <%//out.print(nombreC);%>
                                 </label>    
                             </td>
@@ -966,7 +966,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                             </td>
                             <td bgcolor="#FFFFFF" class="style58">&iquest;Cu&aacute;l (es)?</td>
                             <td class="style58">
-                                <label> <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
+                                <label> <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" /><%=rset.getString(nombreC)%></textarea>
                                     <%//out.print(nombreC);%></label> 
                             </td>
                             <td class="style58">&nbsp;</td>
@@ -1023,14 +1023,14 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
 
 
                 </form>
-                                                        <%
-        }
-    } catch (Exception e) {
-        out.println("Hola");
-        out.println(e.getMessage());
-    }
-    con.cierraConexion();
-%>
+                <%
+                        }
+                    } catch (Exception e) {
+                        out.println("Hola");
+                        out.println(e.getMessage());
+                    }
+                    con.cierraConexion();
+                %>
 
                 <td colspan="7" class="style47">
                     <strong class="neg">DERECHOS RESERVADOS GNKL/DESARROLLOS WEB &reg; 2009 - 2014</strong></td>
@@ -1065,7 +1065,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
 
 
                 <!-- 
-                 fin Mensaje de Acerca de...
+             fin Mensaje de Acerca de...
                 -->                            
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -1084,6 +1084,7 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
                                         <input type="submit" class="btn btn-primary" value="Guardar" id="btn_com" onClick="return verificaCom(document.forms.form_com);" />
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                                     </div>
+
                                 </form>
                             </div>
                         </div><!-- /.modal-content -->
@@ -1095,7 +1096,28 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
     </body>
 </html>
 
+<!-- <script type="text/javascript"-->
+<script languaje="Javascript"> // este script hace que tabule el enter !!!
+function tabular(e,obj) 
+        {
+            tecla=(document.all) ? e.keyCode : e.which;
+            if(tecla!=13) return;
+            frm=obj.form;
+            for(i=0;i<frm.elements.length;i++) 
+                if(frm.elements[i]==obj) 
+                { 
+                    if (i==frm.elements.length-1) 
+                        i=-1;
+                    break 
+                }
+            /*ACA ESTA EL CAMBIO*/
+            if (frm.elements[i+1].disabled ==true )    
+                tabular(e,frm.elements[i+1]);
+            else frm.elements[i+1].focus();
+            return false;
+        }  
 
+</script>
 <script type="text/javascript">
     function validar_a() {
         //obteniendo el valor que se puso en campo text del formulario
@@ -1296,11 +1318,49 @@ DecimalFormat forma2= new DecimalFormat("##,###.##", simbolos);
 
     });
 </script>
-<script>
+<script type="text/javascript">
     $(document).ready(function() {
-        $('.carousel').carousel({
-            interval: 3000
+        $('#form').submit(function() {
+
+            //alert("Ingresó");
+            return false;
         });
+
+
+        $('#form_com').submit(function() {
+            //alert("huges");
+            return false;
+        });
+        $("#btn_com").click(function() {
+
+            var nom = $('#txtf_nom').val();
+            var cor = $('#txtf_cor').val();
+            var com = $('#txta_com').val();
+            //alert(id+" "+id);
+            if (nom == '' || cor == '' || com == '') {
+                return false;
+            }
+            else {
+                var dataString = $('#form_com').serialize();
+                //alert('Datos serializados: '+dataString);
+                var dir = 'servletCorreo';
+
+                $.ajax({
+                    url: dir,
+                    type: "POST",
+                    data: dataString,
+                    success: function(data) {
+                        alert("Sus datos han sido Enviados");
+                        location.reload();
+                        //$("#form_com").fadeOut("slow");
+                        /*$('#txtf_nom').value='huge';
+                         $('#txtf_cor').value='';
+                         $('#txta_com').value='';*/
+                    },
+                });
+            }
+        });
+
     });
 </script>
 <script type="text/javascript">
