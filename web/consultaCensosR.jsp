@@ -28,13 +28,12 @@
         <title>:: CONSULTA DE CENSOS ::</title>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <!-- Bootstrap core CSS -->
+        <link href="css/blueberry.css" rel="stylesheet" />
         <link href="css/bootstrap.css" rel="stylesheet" />
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
         <link  href="css/bootstrap-responsive.css" rel="stylesheet" />
         <link href="css/jumbotron-narrow.css" rel="stylesheet" />
 
-        <link rel="stylesheet" href="bjqs.css" />
-        <link rel="stylesheet" href="demo.css" />
         <script type="text/javascript" src="js/jquery.min.js"></script>
 
         <script src ="Scripts/jquery-1.6.1.min.js" type = "text/javascript" ></script>
@@ -997,21 +996,27 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="10">
-                            <div id="banner-fade">
+                        <td colspan="10" height="">
+                            <div class="blueberry" style="width: 600px; height: 500px;">
+                                <ul class="slides">
+                                    <%
+                                        try {
+                                            con.conectar();
 
-                                <!-- start Basic Jquery Slider -->
-                                <ul class="bjqs">
-                                    <li><img src="img/banner01.jpg" title="Automatically generated caption"></li>
-                                    <li><img src="img/banner02.jpg" title="Automatically generated caption"></li>
-                                    <li><img src="img/banner03.jpg" title="Automatically generated caption"></li>
+                                            //out.print(qery);
+                                            ResultSet rsetimg = con.consulta("select imagen from tb_imagenes where id_uni = '" + id_uni + "'");
+                                            while (rsetimg.next()) {
+                                                out.print("<li><img src='imagenes/" + id_uni + "/" + rsetimg.getString("imagen") + "' width = '600px' height = '320px' /> </li>");
+                                            }
+                                            con.cierraConexion();
+                                        } catch (Exception e) {
+                                        }
+                                    %> 
                                 </ul>
-                                <!-- end Basic jQuery Slider -->
-
                             </div>
                         </td>
-                        <a name="abajo" id="abajo"></a>       
-                        <div align="rigth"><a href="#top">Ir hacia Arriba</a></div>
+
+                        <a name="abajo" id="abajo"></a>
                     </tr>
                     <%
                         }
@@ -1086,30 +1091,13 @@
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bjqs-1.3.min.js"></script>
-    <script src="js/libs/jquery.secret-source.min.js"></script>
-<script class="secret-source">
-    jQuery(document).ready(function($) {
-
-        $('#banner-slide').bjqs({
-            animtype: 'slide',
-            height: 320,
-            width: 620,
-            responsive: true,
-            randomstart: true
-        });
-
-    });
-</script>
+<script src="js/libs/jquery.secret-source.min.js"></script>
+<script src="js/jquery.blueberry.js"></script>
 <script>
-    jQuery(function($) {
-
-        $('.secret-source').secretSource({
-            includeTag: false
-        });
-
-    });
+                                        $(window).load(function() {
+                                            $('.blueberry').blueberry();
+                                        });
 </script>
-
 <!-- End SlidesJS Required -->
 <script type="text/javascript">
     $(document).ready(function() {
