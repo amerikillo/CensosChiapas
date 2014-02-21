@@ -23,7 +23,7 @@
     ResultSet rset = null;
     ResultSet rset2 = null;
 
-    String id_uni = "", juris = "", muni = "", nombre_gnk = "", tipo = "", hora = "", fecha = "", clues="";
+    String id_uni = "", juris = "", muni = "", nombre_gnk = "", tipo = "", hora = "", fecha = "", clues = "";
     int ban = 0;
 
     try {
@@ -82,46 +82,49 @@
                 <div class="col-md-4">.col-md-4</div>
                 <div class="col-md-4">.col-md-4</div>
             </div-->
+            <div id="forma-login" class="marco">
+                <form name ="forma-login"  method="post" >
+                    <!--label for="username" class="uname" data-icon="u" > Your email or username </label-->
+                    <div class="row">
+                        <div class="col-md-4"><img src="imagenes/GNKL_Small.JPG" ></div>
+                        <div class="col-md-8"><h2>Toma de Censos</h2></div>
+                    </div>
 
-            <form name ="forma-login" id="forma-login" class="marco" method="post" >
-                <!--label for="username" class="uname" data-icon="u" > Your email or username </label-->
-                <div class="row">
-                    <div class="col-md-4"><img src="imagenes/GNKL_Small.JPG" ></div>
-                    <div class="col-md-8"><h2>Toma de Censos</h2></div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                            <span class="input-group-addon"><label class=" glyphicon glyphicon-hand-right"></label></span>
-                            <select name="slct_H" id="slct_H" onchange="SelectUni(this.form);" class="form-control">
-                                <option>-- Seleccione Jurisdicci&oacute;n --</option>
-                                <%                                            while (rset.next()) {
-                                %>
-                                <option value="<%=rset.getString("juris")%>"><%=rset.getString("juris")%></option>
-                                <%
-                                    }
-                                %>
-                            </select> 
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><label class=" glyphicon glyphicon-hand-right"></label></span>
+                                <select name="slct_H" id="slct_H" onchange="SelectUni(this.form);" class="form-control">
+                                    <option>-- Seleccione Jurisdicci&oacute;n --</option>
+                                    <%                                            while (rset.next()) {
+                                    %>
+                                    <option value="<%=rset.getString("juris")%>"><%=rset.getString("juris")%></option>
+                                    <%
+                                        }
+                                    %>
+                                </select> 
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                            <span class="input-group-addon"><label class="glyphicon glyphicon-header"></label></span>
-                            <select name="slct_U" id="slct_U" class="form-control">
-                                <option>-- Seleccione Hospital --</option>
-                            </select>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><label class="glyphicon glyphicon-header"></label></span>
+                                <select name="slct_U" id="slct_U" class="form-control">
+                                    <option>-- Seleccione Hospital --</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                </div> 
+                    </div> 
 
-                <br>              
-                <button name="consultar" value="1" class="btn btn-primary btn-lg btn-block" type="submit">Consultar</button>
-                <!--button class="btn btn-primary btn-lg btn-block" type="button" onclick="window.location='modificarCensoH.jsp'">Modificar</button-->
-            </form>
+                    <br>              
+                    <button name="consultar" value="1" class="btn btn-primary btn-lg btn-block" type="submit">Consultar</button>
+                </form>
+                <form method="get" action="SubeInfo"> 
+                    <button name="subir" value="1" class="btn btn-default btn-lg btn-block" type="submit">Subir Información</button>
+                </form>
+            </div>
 
             <form name ="forma-login" id="forma-login" class="marco" action="CapturaCensos" method="post" >
                 <br>

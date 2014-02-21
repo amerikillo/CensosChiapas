@@ -33,6 +33,8 @@
         <link  href="css/bootstrap-responsive.css" rel="stylesheet" />
         <link href="css/jumbotron-narrow.css" rel="stylesheet" />
 
+        <link rel="stylesheet" href="bjqs.css" />
+        <link rel="stylesheet" href="demo.css" />
         <script type="text/javascript" src="js/jquery.min.js"></script>
 
         <script src ="Scripts/jquery-1.6.1.min.js" type = "text/javascript" ></script>
@@ -995,53 +997,21 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="7">
-                            <div class="contenedor">
-                                <div id="myCarousel" class="carousel slide" >
-                                    <div class="container well" align="justify">
-                                        <ol class="carousel-indicators">
+                        <td colspan="10">
+                            <div id="banner-fade">
 
-                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                                            <li data-target="#myCarousel" data-slide-to="3"></li>
-                                            <li data-target="#myCarousel" data-slide-to="4"></li>
-                                            <li data-target="#myCarousel" data-slide-to="5"></li>
-                                            <li data-target="#myCarousel" data-slide-to="6"></li>
-                                            <li data-target="#myCarousel" data-slide-to="7"></li>
-                                            <li data-target="#myCarousel" data-slide-to="8"></li>
-                                            <li data-target="#myCarousel" data-slide-to="9"></li>
-                                            <li data-target="#myCarousel" data-slide-to="10"></li>
-                                            <li data-target="#myCarousel" data-slide-to="11"></li>
-                                        </ol>
-                                        <!-- Carousel items -->
+                                <!-- start Basic Jquery Slider -->
+                                <ul class="bjqs">
+                                    <li><img src="img/banner01.jpg" title="Automatically generated caption"></li>
+                                    <li><img src="img/banner02.jpg" title="Automatically generated caption"></li>
+                                    <li><img src="img/banner03.jpg" title="Automatically generated caption"></li>
+                                </ul>
+                                <!-- end Basic jQuery Slider -->
 
-
-                                        <div class="carousel-inner" align="center" >
-                                            <div class="item active"><img src="imagenes/<%=id_uni%>/<%=id_uni%>_1.JPG" width="500" id="imagen" /></div>
-                                            <div class="item"><img src="imagenes/<%=id_uni%>/<%=id_uni%>_2.JPG" width="500" id="imagen2" /></div>
-                                            <div class="item"><img src="imagenes/<%=id_uni%>/<%=id_uni%>_3.JPG" width="500" id="imagen3" /></div>
-                                            <div class="item"><img src="imagenes/<%=id_uni%>/<%=id_uni%>_4.JPG" width="500" id="imagen4" /></div>
-                                            <div class="item"><img src="imagenes/<%=id_uni%>/<%=id_uni%>_5.JPG" width="500" id="imagen5" /></div>
-                                            <div class="item"><img src="imagenes/<%=id_uni%>/<%=id_uni%>_6.JPG" width="500" id="imagen6" /></div>
-                                            <div class="item"><img src="imagenes/<%=id_uni%>/<%=id_uni%>_7.JPG" width="500" id="imagen7" /></div>
-                                            <div class="item"><img src="imagenes/<%=id_uni%>/<%=id_uni%>_8.JPG" width="500" id="imagen7" /></div>
-                                            <div class="item"><img src="imagenes/<%=id_uni%>/<%=id_uni%>_9.JPG" width="500" id="imagen7" /></div>
-                                            <div class="item"><img src="imagenes/<%=id_uni%>/<%=id_uni%>_10.JPG" width="500" id="imagen7" /></div>
-                                            <div class="item"><img src="imagenes/<%=id_uni%>/<%=id_uni%>_11.JPG" width="500" id="imagen7" /></div>
-                                            <div class="item"><img src="imagenes/<%=id_uni%>/<%=id_uni%>_12.JPG" width="500" id="imagen7" /></div>
-                                        </div>
-
-                                        <!-- Carousel nav -->
-                                        <!-- Wrapper for slides -->
-                                        <a class="carousel-control left btn-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                                        <a class="carousel-control right btn-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-                                    </div>
-                                </div>
                             </div>
-                            <a name="abajo" id="abajo"></a>       
-                            <div align="rigth"><a href="#top">Ir hacia Arriba</a></div>   
                         </td>
+                        <a name="abajo" id="abajo"></a>       
+                        <div align="rigth"><a href="#top">Ir hacia Arriba</a></div>
                     </tr>
                     <%
                         }
@@ -1091,16 +1061,16 @@
                         </div>
                         <div class="modal-body">
                             <form name="form_com" method="post" id="form_com">
-                            Nombre: <input type="text" class="form-control" autofocus placeholder="Ingrese su Nombre" name="txtf_nom" id="txtf_nom" />
-                            Cuenta de Correo: <input type="text" class="form-control"  placeholder="Ingrese su Cuenta de Correo" name="txtf_cor" id="txtf_cor" onblur="validarEmail(this.form.txtf_cor.value);" />
-                            Deje su Comentario: <textarea name="txta_com" cols="10" rows="5" class="form-control" id="txta_com"></textarea>
-                            <div class="modal-footer">
+                                Nombre: <input type="text" class="form-control" autofocus placeholder="Ingrese su Nombre" name="txtf_nom" id="txtf_nom" />
+                                Cuenta de Correo: <input type="text" class="form-control"  placeholder="Ingrese su Cuenta de Correo" name="txtf_cor" id="txtf_cor" onblur="validarEmail(this.form.txtf_cor.value);" />
+                                Deje su Comentario: <textarea name="txta_com" cols="10" rows="5" class="form-control" id="txta_com"></textarea>
+                                <div class="modal-footer">
 
-                                <input type="submit" class="btn btn-primary" value="Guardar" id="btn_com" onClick="return verificaCom(document.forms.form_com);" />
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                            </div>
+                                    <input type="submit" class="btn btn-primary" value="Guardar" id="btn_com" onClick="return verificaCom(document.forms.form_com);" />
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                </div>
 
-                        </form>
+                            </form>
                         </div>
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
@@ -1109,7 +1079,38 @@
         <a href="#" class="scrollup">Scroll</a>
     </body>
 </html>
+<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="//code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bjqs-1.3.min.js"></script>
+    <script src="js/libs/jquery.secret-source.min.js"></script>
+<script class="secret-source">
+    jQuery(document).ready(function($) {
 
+        $('#banner-slide').bjqs({
+            animtype: 'slide',
+            height: 320,
+            width: 620,
+            responsive: true,
+            randomstart: true
+        });
+
+    });
+</script>
+<script>
+    jQuery(function($) {
+
+        $('.secret-source').secretSource({
+            includeTag: false
+        });
+
+    });
+</script>
+
+<!-- End SlidesJS Required -->
 <script type="text/javascript">
     $(document).ready(function() {
         $('#form').submit(function() {
@@ -1117,63 +1118,7 @@
             //alert("Ingresó");
             return false;
         });
-        $('#btn_mos').click(function() {
-            var id = $('#slct_censo').val();
-            //alert("id: "+id);
-            var dir = 'consultaCensos.jsp?id=' + id;
-            $.ajax({
-                url: dir,
-                type: 'json',
-                success: function(data) {
-                    // alert("success");
-                    json = JSON.parse(data);
-                    var nomCon = "textarea#campo_";
-                    var nombreControl = "", nombreJson = "";
-                    var contNom = 1;
-                    var nomJson = "json_";
 
-                    while (contNom < 196) {
-                        nombreControl = nomCon + contNom;
-                        nombreJson = nomJson + contNom;
-                        // alert(nombreControl=nomCon+contNom);
-                        // alert(nombreJson=nomJson+contNom);
-                        $(nombreControl).val(json[nombreJson]);
-                        contNom++;
-                    }
-                    //$("input#txtf_aa").val(json["json_1"]); 
-                    //$("input#txtf_elab").val(json["json_75"]);
-                    //$("input#ima").val(json["json_9"]);
-
-
-                    var image = $('#imagen');
-                    var image2 = $('#imagen2');
-                    var image3 = $('#imagen3');
-                    var image4 = $('#imagen4');
-                    var image5 = $('#imagen5');
-                    var image6 = $('#imagen6');
-                    var image7 = $('#imagen7');
-
-                    var ruta = "imagenes/" + json["json_9"] + "/" + json["json_9"] + "_1.JPG";
-                    var ruta2 = "imagenes/" + json["json_9"] + "/" + json["json_9"] + "_2.JPG";
-                    var ruta3 = "imagenes/" + json["json_9"] + "/" + json["json_9"] + "_3.JPG";
-                    var ruta4 = "imagenes/" + json["json_9"] + "/" + json["json_9"] + "_4.JPG";
-                    var ruta5 = "imagenes/" + json["json_9"] + "/" + json["json_9"] + "_5.JPG";
-                    var ruta6 = "imagenes/" + json["json_9"] + "/" + json["json_9"] + "_6.JPG";
-                    var ruta7 = "imagenes/" + json["json_9"] + "/" + json["json_9"] + "_7.JPG";
-
-                    //$(".carousel-inner .item img").attr("src", "imagenes/" + id); 
-                    //alert(ruta);
-                    image.attr("src", ruta);
-                    image2.attr("src", ruta2);
-                    image3.attr("src", ruta3);
-                    image4.attr("src", ruta4);
-                    image5.attr("src", ruta5);
-                    image6.attr("src", ruta6);
-                    image7.attr("src", ruta7);
-
-                },
-            });
-        });
 
         $('#form_com').submit(function() {
             //alert("huges");
@@ -1243,8 +1188,3 @@
         });
     });
 </script>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="//code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap-modal.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>

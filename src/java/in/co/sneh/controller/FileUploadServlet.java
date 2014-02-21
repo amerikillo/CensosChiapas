@@ -17,12 +17,14 @@ import java.io.InputStream;
 import java.io.PrintWriter;
 import org.apache.commons.fileupload.FileItemIterator;
 import javax.servlet.http.HttpSession;
+import conn.*;
     /**
  *
  * @author CEDIS TOLUCA3
  */
 public class FileUploadServlet extends HttpServlet {    
     public void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
+        ConectionDB con = new ConectionDB();
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         String Unidad="";
@@ -47,6 +49,13 @@ public class FileUploadServlet extends HttpServlet {
                     }else{
                         String path = getServletContext().getRealPath("/");
                         if(FileUpload.processFile(path, item, Unidad)){
+                            try{
+                                con.conectar();
+                                con.insertar("insert into tb_imagenes values('"+Unidad+"', '"+item.getName()+"')");
+                                con.cierraConexion();
+                            } catch(Exception e){
+                                
+                            }
                             response.getWriter().println("file uploaded successfully");
                             sesion.setAttribute("ban", "1");
                             //response.sendRedirect("cargaFotosCensos.jsp");
