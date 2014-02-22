@@ -105,7 +105,7 @@
           <param name="expressinstall" value="Scripts/expressInstall.swf" />
           <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
           <!--[if !IE]>-->
-          <object type="application/x-shockwave-flash" data="imagenes/flash1_ver.swf" width="369" height="185">
+          <object type="application/x-shockwave-flash" data="imagenes/CHIAPAS2.swf" width="369" height="185">
             <!--<![endif]-->
             <param name="quality" value="high" />
             <param name="wmode" value="opaque" />
