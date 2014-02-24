@@ -486,7 +486,12 @@
                         <td class="style58">¿La Unidad cuenta con Servicios?</td>
                         <td class="style33"><strong>
                                 <label>
-                                    <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
+                                    <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
+                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                     <%//out.print(nombreC);%></label> 
 
                             </strong></td>
@@ -494,6 +499,7 @@
                         <td class="style58">A.29</td>
                         <td class="style58">¿Cu&aacute;ntos Servicios?</td>
                         <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
+
                                 <%//out.print(nombreC);%></label>    
                         </td>
                     </tr>
@@ -539,7 +545,12 @@
                         <td>
                             <span class="style49">
                                 <label>
-                                    <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
+                                     <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
+                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                     <%//out.print(nombreC);%>
                                 </label>
                             </span>
@@ -641,7 +652,12 @@
                         <td class="style58">&nbsp;</td>
                         <td class="style58"><div align="center">B.12</div></td>
                         <td class="style58">¿Realizan inventarios en la unidad? </td>
-                        <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
+                        <td> <label> <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
+                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                 <%//out.print(nombreC);%></label></td>
                     </tr>
                     <tr>
@@ -658,7 +674,12 @@
                         <td class="style58">¿Esta unidad esta certificada? </td>
                         <td>
                             <label>
-                                <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
+                                <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
+                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                 <%//out.print(nombreC);%>
                             </label>
                         </td>
@@ -688,7 +709,12 @@
                         <td class="style58">¿Cuenta con Farmacia?</td>
                         <td><span class="style58">
                                 <label>
-                                    <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
+                                    <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
+                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                     <%//out.print(nombreC);%>
                                 </label>   
                             </span>
@@ -696,7 +722,12 @@
                         <td class="style58">&nbsp;</td>
                         <td class="style58"><div align="center">C.2</div></td>
                         <td class="style58">¿La farmacia se encuentra dentro del Consultorio?</td>
-                        <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
+                        <td> <label><!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
+                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                 <%//out.print(nombreC);%>
                             </label>    
                         </td>
@@ -747,7 +778,12 @@
                         <td class="style47"><div align="center" class="style58">C.7</div></td>
                         <td class="style58">¿Se cuenta con red fr&iacute;a?</td>
                         <td class="style58"><label>
-                                <label>  <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
+                                <label>  <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
+                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                     <%//out.print(nombreC);%></label> 
                         </td>
                         <td class="style58">&nbsp;</td>
@@ -784,7 +820,12 @@
                     <tr>
                         <td class="style58"><div align="center">D.1</div></td>
                         <td class="style58">¿Cuenta con &aacute;rea de almac&eacute;n?</td>
-                        <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
+                        <td> <label><!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
+                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                 <%//out.print(nombreC);%>
                             </label>
                         </td>
@@ -825,7 +866,12 @@
                         <td class="style58">&nbsp;</td>
                         <td class="style58"><div align="center">D.6</div></td>
                         <td class="style58">¿Cuentan con Anden para carga y descarga en el Almac&eacute;n?</td>
-                        <td> <label><textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
+                        <td> <label><!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
+                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                 <%//out.print(nombreC);%></label>    
                         </td>
                     </tr>
@@ -874,7 +920,12 @@
                         </td>
                         <td bgcolor="#FFFFFF" class="style58"> <strong class="neg">¿Cuenta con equipo de C&oacute;mputo?</strong></td>
                         <td class="style58">
-                            <label>  <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" ><%=rset.getString(nombreC)%></textarea>
+                            <label>  <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
+                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                 <%//out.print(nombreC);%>
                             </label> 
                         </td>
@@ -892,7 +943,12 @@
                                     <div align="center" class="style58">
                                         <div align="center">
                                             <p>
-                                                <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3"  class="form-control" onkeypress="return tabular(event,this)" />
+                                                <!--input type="text" name="<%//=nombreC = nomCam + (contCam += 1)%>" value="<%//=rset.getString(nombreC)%>" id="<%//=nombreC%>" size="3" maxlength="3"  class="form-control" onkeypress="return tabular(event, this)" /-->
+                                                <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                                 <strong class="neg">CPU</strong></p>
                                                 <%//out.print(nombreC);%>
                                         </div>
@@ -902,7 +958,12 @@
                                     <div align="center" class="style58">
                                         <div align="center">
                                             <p>
-                                                <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3" class="form-control" onkeypress="return tabular(event,this)" />
+                                                 <!--input type="text" name="<%//=nombreC = nomCam + (contCam += 1)%>" value="<%//=rset.getString(nombreC)%>" id="<%//=nombreC%>" size="3" maxlength="3"  class="form-control" onkeypress="return tabular(event, this)" /-->
+                                                <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                                 <strong class="neg">Monitor</strong>           </p>
                                                 <%//out.print(nombreC);%>
                                         </div>
@@ -912,7 +973,12 @@
                                     <div align="center" class="style58">
                                         <div align="center">
                                             <p>
-                                                <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3"  class="form-control" onkeypress="return tabular(event,this)" />
+                                                <!--input type="text" name="<%//=nombreC = nomCam + (contCam += 1)%>" value="<%//=rset.getString(nombreC)%>" id="<%//=nombreC%>" size="3" maxlength="3"  class="form-control" onkeypress="return tabular(event, this)" /-->
+                                                <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                                 <strong class="neg">Impresora</strong>                </p>
                                                 <%//out.print(nombreC);%>
                                         </div>
@@ -922,7 +988,12 @@
                                     <div align="center" class="style58">
                                         <div align="center">
                                             <p>
-                                                <input type="text" name="<%=nombreC = nomCam + (contCam += 1)%>" value="<%=rset.getString(nombreC)%>" id="<%=nombreC%>" size="3" maxlength="3" class="form-control" onkeypress="return tabular(event,this)" />
+                                                 <!--input type="text" name="<%//=nombreC = nomCam + (contCam += 1)%>" value="<%//=rset.getString(nombreC)%>" id="<%//=nombreC%>" size="3" maxlength="3"  class="form-control" onkeypress="return tabular(event, this)" /-->
+                                                <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                                 <strong class="neg">No-Break</strong></p>
                                                 <%//out.print(nombreC);%>
                                         </div>
@@ -940,7 +1011,12 @@
                             <td bgcolor="#FFFFFF" class="style58">¿Cuenta con conexi&oacute;n a la Internet?</td>
                             <td class="style58">
                                 <span class="style47">
-                                    <label> <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" /><%=rset.getString(nombreC)%></textarea>
+                                    <label> <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
+                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                         <%//out.print(nombreC);%>
                                     </label>
                                 </span>
@@ -953,7 +1029,12 @@
                             <td class="style58">Se&ntilde;al de Telefon&iacute;a Celular</td>
                             <td> 
                                 <label>
-                                    <textarea name="<%=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%=nombreC%>" onkeypress="return handleEnter(this, event);" /><%=rset.getString(nombreC)%></textarea>
+                                    <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
+                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="SI" >Si</option>
+                                        <option value="NO">No</option>
+                                    </select>
                                     <%//out.print(nombreC);%>
                                 </label>    
                             </td>
@@ -1098,24 +1179,26 @@
 
 <!-- <script type="text/javascript"-->
 <script languaje="Javascript"> // este script hace que tabule el enter !!!
-function tabular(e,obj) 
-        {
-            tecla=(document.all) ? e.keyCode : e.which;
-            if(tecla!=13) return;
-            frm=obj.form;
-            for(i=0;i<frm.elements.length;i++) 
-                if(frm.elements[i]==obj) 
-                { 
-                    if (i==frm.elements.length-1) 
-                        i=-1;
-                    break 
-                }
-            /*ACA ESTA EL CAMBIO*/
-            if (frm.elements[i+1].disabled ==true )    
-                tabular(e,frm.elements[i+1]);
-            else frm.elements[i+1].focus();
-            return false;
-        }  
+    function tabular(e, obj)
+    {
+        tecla = (document.all) ? e.keyCode : e.which;
+        if (tecla != 13)
+            return;
+        frm = obj.form;
+        for (i = 0; i < frm.elements.length; i++)
+            if (frm.elements[i] == obj)
+            {
+                if (i == frm.elements.length - 1)
+                    i = -1;
+                break
+            }
+        /*ACA ESTA EL CAMBIO*/
+        if (frm.elements[i + 1].disabled == true)
+            tabular(e, frm.elements[i + 1]);
+        else
+            frm.elements[i + 1].focus();
+        return false;
+    }
 
 </script>
 <script type="text/javascript">
