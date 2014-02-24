@@ -209,9 +209,18 @@
                         <div class="input-group">
                             <span class="input-group-addon"><label class=" glyphicon glyphicon-pencil"></label></span>
                             <select name="encuestador" id="encuestador" class="form-control">
-                                <option>Encuestador 1</option>
-                                <option>Encuestador 2</option>
-                                <option>Encuestador 3</option>
+                                <option>Israel Flores</option>
+                                <option>Juan Carlos Rdz</option>
+                                <option>Roberto Colin</option>
+                                <option>José Ramón Yañez</option>
+                                <option>Misael Reyes</option>
+                                <option>Eulises Abad</option>
+                                <option>Emanuel Mtz</option>
+                                <option>Evaristo Gómez</option>
+                                <option>Fco Rodríguez</option>
+                                <option>Octavio Velázquez</option>
+                                <option>Juan Carlos Venegas</option>
+                                <option>Jonathan Calónico</option>
                             </select>
                         </div>
                     </div>
