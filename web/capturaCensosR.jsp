@@ -489,8 +489,12 @@
                                     <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
                                     <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
                                         <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
+                                        <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                                out.println("selected");
+                                            }%> >Si</option>
+                                        <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                                out.println("selected");
+                                            }%> >No</option>
                                     </select>
                                     <%//out.print(nombreC);%></label> 
 
@@ -548,8 +552,13 @@
                                      <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
                                     <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
                                         <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
+
+                                        <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                                out.println("selected");
+                                            }%> >Si</option>
+                                        <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                                out.println("selected");
+                                            }%> >No</option>
                                     </select>
                                     <%//out.print(nombreC);%>
                                 </label>
@@ -653,11 +662,16 @@
                         <td class="style58"><div align="center">B.12</div></td>
                         <td class="style58">¿Realizan inventarios en la unidad? </td>
                         <td> <label> <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
-                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
-                                        <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
-                                    </select>
+                                <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                    <option value="">Seleccione una opción</option>
+
+                                            <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                            out.println("selected");
+                                        }%> >Si</option>
+                                            <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                            out.println("selected");
+                                        }%> >No</option>
+                                </select>
                                 <%//out.print(nombreC);%></label></td>
                     </tr>
                     <tr>
@@ -675,11 +689,16 @@
                         <td>
                             <label>
                                 <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
-                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
-                                        <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
-                                    </select>
+                                <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                    <option value="">Seleccione una opción</option>
+
+                                            <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                            out.println("selected");
+                                        }%> >Si</option>
+                                            <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                            out.println("selected");
+                                        }%> >No</option>
+                                </select>
                                 <%//out.print(nombreC);%>
                             </label>
                         </td>
@@ -712,8 +731,12 @@
                                     <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
                                     <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
                                         <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
+                                        <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                                out.println("selected");
+                                            }%> >Si</option>
+                                        <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                                out.println("selected");
+                                            }%> >No</option>
                                     </select>
                                     <%//out.print(nombreC);%>
                                 </label>   
@@ -723,11 +746,15 @@
                         <td class="style58"><div align="center">C.2</div></td>
                         <td class="style58">¿La farmacia se encuentra dentro del Consultorio?</td>
                         <td> <label><!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
-                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
-                                        <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
-                                    </select>
+                                <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                    <option value="">Seleccione una opción</option>
+                                            <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                            out.println("selected");
+                                        }%> >Si</option>
+                                            <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                            out.println("selected");
+                                        }%> >No</option>
+                                </select>
                                 <%//out.print(nombreC);%>
                             </label>    
                         </td>
@@ -740,11 +767,11 @@
                         </td>
                         <td class="style58">Horario de atenci&oacute;n</td>
                         <td><span class="style58">De:</span>
-                            <input name="<%=nombreC = nomCam + (contCam += 1)%>" type="text" class="form-control"  id="<%=nombreC%>" size="5" maxlength="10" onkeypress="return handleEnter(this, event);" value="<%=rset.getString(nombreC)%>"  />
+                            <input name="<%=nombreC = nomCam + (contCam += 1)%>" type="text" class="form-control"  id="<%=nombreC%>" size="5" maxlength="10"  onkeypress="return handleEnter(this, event);" value="<%=rset.getString(nombreC)%>"  />
                             <%//out.print(nombreC);%></label> 
                             <br />
                             <span class="style58">A:</span>
-                            <input name="<%=nombreC = nomCam + (contCam += 1)%>"  type="text" class="form-control"  id="<%=nombreC%>" size="5" maxlength="10" onkeypress="return handleEnter(this, event);" value="<%=rset.getString(nombreC)%>"  />
+                            <input name="<%=nombreC = nomCam + (contCam += 1)%>"  type="text" class="form-control"  id="<%=nombreC%>" size="5" maxlength="10"  onkeypress="return handleEnter(this, event);" value="<%=rset.getString(nombreC)%>"  />
                             <%//out.print(nombreC);%></label> 
                             </label></td>
                         <td class="style58">&nbsp;</td>
@@ -781,8 +808,12 @@
                                 <label>  <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
                                     <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
                                         <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
+                                        <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                                out.println("selected");
+                                            }%> >Si</option>
+                                        <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                                out.println("selected");
+                                            }%> >No</option>
                                     </select>
                                     <%//out.print(nombreC);%></label> 
                         </td>
@@ -821,11 +852,15 @@
                         <td class="style58"><div align="center">D.1</div></td>
                         <td class="style58">¿Cuenta con &aacute;rea de almac&eacute;n?</td>
                         <td> <label><!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
-                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
-                                        <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
-                                    </select>
+                                <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                    <option value="">Seleccione una opción</option>
+                                            <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                            out.println("selected");
+                                        }%> >Si</option>
+                                            <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                            out.println("selected");
+                                        }%> >No</option>
+                                </select>
                                 <%//out.print(nombreC);%>
                             </label>
                         </td>
@@ -834,11 +869,11 @@
                         <td class="style58">Horario de atenci&oacute;n</td>
                         <td><p>&nbsp;</p>
                             <div align="left"><span class="style58">De:</span>
-                                <input name="<%=nombreC = nomCam + (contCam += 1)%>" type="text" class="form-control"  id="<%=nombreC%>" size="7" maxlength="7" value="<%=rset.getString(nombreC)%>"  />
+                                <input name="<%=nombreC = nomCam + (contCam += 1)%>" type="text" class="form-control"  id="<%=nombreC%>" size="7" maxlength="7" value="<%=rset.getString(nombreC)%>"  onkeypress="return handleEnter(this, event);"  />
                                 <%//out.print(nombreC);%>
                                 <br />
                                 <strong>A:
-                                    <input name="<%=nombreC = nomCam + (contCam += 1)%>"  class="form-control" type="text" id="<%=nombreC%>" size="7" maxlength="7" value="<%=rset.getString(nombreC)%>"  />
+                                    <input name="<%=nombreC = nomCam + (contCam += 1)%>"  class="form-control" type="text" id="<%=nombreC%>" size="7" maxlength="7"  onkeypress="return handleEnter(this, event);"  value="<%=rset.getString(nombreC)%>"  />
                                     <%//out.print(nombreC);%>
                                 </strong>
                             </div>
@@ -867,11 +902,15 @@
                         <td class="style58"><div align="center">D.6</div></td>
                         <td class="style58">¿Cuentan con Anden para carga y descarga en el Almac&eacute;n?</td>
                         <td> <label><!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
-                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
-                                        <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
-                                    </select>
+                                <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                    <option value="">Seleccione una opción</option>
+                                            <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                            out.println("selected");
+                                        }%> >Si</option>
+                                            <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                            out.println("selected");
+                                        }%> >No</option>
+                                </select>
                                 <%//out.print(nombreC);%></label>    
                         </td>
                     </tr>
@@ -921,11 +960,15 @@
                         <td bgcolor="#FFFFFF" class="style58"> <strong class="neg">¿Cuenta con equipo de C&oacute;mputo?</strong></td>
                         <td class="style58">
                             <label>  <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
-                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
-                                        <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
-                                    </select>
+                                <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                    <option value="">Seleccione una opción</option>
+                                            <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                            out.println("selected");
+                                        }%> >Si</option>
+                                            <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                            out.println("selected");
+                                        }%> >No</option>
+                                </select>
                                 <%//out.print(nombreC);%>
                             </label> 
                         </td>
@@ -945,10 +988,14 @@
                                             <p>
                                                 <!--input type="text" name="<%//=nombreC = nomCam + (contCam += 1)%>" value="<%//=rset.getString(nombreC)%>" id="<%//=nombreC%>" size="3" maxlength="3"  class="form-control" onkeypress="return tabular(event, this)" /-->
                                                 <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
-                                        <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
-                                    </select>
+                                                    <option value="">Seleccione una opción</option>
+                                                            <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                                            out.println("selected");
+                                                        }%> >Si</option>
+                                                            <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                                            out.println("selected");
+                                                        }%> >No</option>
+                                                </select>
                                                 <strong class="neg">CPU</strong></p>
                                                 <%//out.print(nombreC);%>
                                         </div>
@@ -960,10 +1007,14 @@
                                             <p>
                                                  <!--input type="text" name="<%//=nombreC = nomCam + (contCam += 1)%>" value="<%//=rset.getString(nombreC)%>" id="<%//=nombreC%>" size="3" maxlength="3"  class="form-control" onkeypress="return tabular(event, this)" /-->
                                                 <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
-                                        <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
-                                    </select>
+                                                    <option value="">Seleccione una opción</option>
+                                                            <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                                            out.println("selected");
+                                                        }%> >Si</option>
+                                                            <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                                            out.println("selected");
+                                                        }%> >No</option>
+                                                </select>
                                                 <strong class="neg">Monitor</strong>           </p>
                                                 <%//out.print(nombreC);%>
                                         </div>
@@ -975,10 +1026,14 @@
                                             <p>
                                                 <!--input type="text" name="<%//=nombreC = nomCam + (contCam += 1)%>" value="<%//=rset.getString(nombreC)%>" id="<%//=nombreC%>" size="3" maxlength="3"  class="form-control" onkeypress="return tabular(event, this)" /-->
                                                 <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
-                                        <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
-                                    </select>
+                                                    <option value="">Seleccione una opción</option>
+                                                            <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                                            out.println("selected");
+                                                        }%> >Si</option>
+                                                            <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                                            out.println("selected");
+                                                        }%> >No</option>
+                                                </select>
                                                 <strong class="neg">Impresora</strong>                </p>
                                                 <%//out.print(nombreC);%>
                                         </div>
@@ -990,10 +1045,14 @@
                                             <p>
                                                  <!--input type="text" name="<%//=nombreC = nomCam + (contCam += 1)%>" value="<%//=rset.getString(nombreC)%>" id="<%//=nombreC%>" size="3" maxlength="3"  class="form-control" onkeypress="return tabular(event, this)" /-->
                                                 <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
-                                        <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
-                                    </select>
+                                                    <option value="">Seleccione una opción</option>
+                                                            <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                                            out.println("selected");
+                                                        }%> >Si</option>
+                                                            <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                                            out.println("selected");
+                                                        }%> >No</option>
+                                                </select>
                                                 <strong class="neg">No-Break</strong></p>
                                                 <%//out.print(nombreC);%>
                                         </div>
@@ -1012,11 +1071,15 @@
                             <td class="style58">
                                 <span class="style47">
                                     <label> <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
-                                    <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
-                                        <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
-                                    </select>
+                                        <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
+                                            <option value="">Seleccione una opción</option>
+                                                    <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                                    out.println("selected");
+                                                }%> >Si</option>
+                                                    <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                                    out.println("selected");
+                                                }%> >No</option>
+                                        </select>
                                         <%//out.print(nombreC);%>
                                     </label>
                                 </span>
@@ -1032,8 +1095,12 @@
                                     <!--textarea name="<%//=nombreC = nomCam + (contCam += 1)%>" cols="40" class="form-control" id="<%//=nombreC%>" onkeypress="return handleEnter(this, event);" ><%//=rset.getString(nombreC)%></textarea-->
                                     <select class="form-control" name="<%=nombreC = nomCam + (contCam += 1)%>" onkeypress="return handleEnter(this, event);" id="<%=nombreC%>">
                                         <option value="">Seleccione una opción</option>
-                                        <option value="SI" >Si</option>
-                                        <option value="NO">No</option>
+                                        <option value="SI" <% if (rset.getString(nombreC).equals("SI")) {
+                                                out.println("selected");
+                                            }%> >Si</option>
+                                        <option value="NO" <% if (rset.getString(nombreC).equals("NO")) {
+                                                out.println("selected");
+                                            }%> >No</option>
                                     </select>
                                     <%//out.print(nombreC);%>
                                 </label>    
@@ -1179,6 +1246,23 @@
 
 <!-- <script type="text/javascript"-->
 <script languaje="Javascript"> // este script hace que tabule el enter !!!
+
+    function handleEnter(field, event) {
+        //var miTabla=new elements();
+        //elements[]={"txtf_ref","txtf_con","txtf_deb"};
+        var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+        if (keyCode == 13) {
+            var i;
+            for (i = 0; i < field.form.elements.length; i++)
+                if (field == field.form.elements[i])
+                    break;
+            i = (i + 1) % field.form.elements.length;
+            field.form.elements[i].focus();
+            return false;
+        }
+        else
+            return true;
+    }
     function tabular(e, obj)
     {
         tecla = (document.all) ? e.keyCode : e.which;
@@ -1471,6 +1555,7 @@
         });
     });
 </script>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="//code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap-modal.js"></script>
