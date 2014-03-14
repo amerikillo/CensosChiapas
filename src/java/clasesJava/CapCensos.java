@@ -19,6 +19,7 @@ public class CapCensos {
     public void Captura(String id_uni, String tipo, String gnombre_gnk, String juris, String fecha, String hora, String encuestador, String muni, String clues) throws SQLException {
         con.conectar();
         try {
+            con.insertar("insert into tb_registro_censos values ('"+id_uni+"', '"+encuestador+"', NOW(), 'INICIO');");
             con.insertar("insert into tb_a (id_uni, campo_5, campo_1, campo_11, campo_12, campo_13, campo_15, campo_7) values('" + id_uni + "', '" + muni + "', '" + gnombre_gnk + "', '" + juris + "', 'CHIAPAS', '"+muni+"', '"+tipo+"', '"+clues+"')");
             con.insertar("insert into tb_b (id_uni) values ('" + id_uni + "')");
             con.insertar("insert into tb_c (id_uni) values ('" + id_uni + "')");

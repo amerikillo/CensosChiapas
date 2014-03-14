@@ -91,6 +91,7 @@ public class CapturaCensos extends HttpServlet {
                 Logger.getLogger(CapturaCensos.class.getName()).log(Level.SEVERE, null, ex);
             }
             sesion.setAttribute("id_uni", request.getParameter("id_uni"));
+            sesion.setAttribute("encuestador", request.getParameter("encuestador"));
             response.sendRedirect("capturaCensosR.jsp");
         }
         
