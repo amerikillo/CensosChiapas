@@ -41,8 +41,14 @@ public class GuardaSeccion extends HttpServlet {
             out.println("<title>Servlet GuardaSeccion</title>");
             out.println("</head>");
             out.println("<body>");
+<<<<<<< HEAD
+=======
+            //out.println("<img src='imagenes/loading.gif' width='400' heitgh='400' /");
+>>>>>>> FETCH_HEAD
             con.conectar();
-            out.println(request.getParameter("guarda_seccion"));
+            //out.println(request.getParameter("guarda_seccion"));
+            
+            con.insertar("insert into tb_registro_censos values ('"+sesion.getAttribute("id_uni")+"', '"+sesion.getAttribute("encuestador")+"', NOW(), '"+request.getParameter("guarda_seccion")+"');");
 
             if (request.getParameter("guarda_seccion").equals("A")) {
 
@@ -52,60 +58,66 @@ public class GuardaSeccion extends HttpServlet {
                 }
                 qry = qry + " campo_31='" + request.getParameter("campo_31").toUpperCase() + "' where id_uni = '" + sesion.getAttribute("id_uni") + "' ;";
                 con.actualizar(qry);
-                response.sendRedirect("capturaCensosR.jsp");
+                //response.sendRedirect("capturaCensosR.jsp");
             }
 
             if (request.getParameter("guarda_seccion").equals("B")) {
                 String qry = "update tb_b set  ";
-                for (int i = 32; i < 45; i++) {
+                for (int i = 32; i < 46; i++) {
                     qry = qry + "campo_" + i + "='" + request.getParameter("campo_" + i).toUpperCase() + "', ";
                 }
-                qry = qry + " campo_45='" + request.getParameter("campo_45").toUpperCase() + "' where id_uni = '" + sesion.getAttribute("id_uni") + "' ;";
+                qry = qry + " campo_46='" + request.getParameter("campo_46").toUpperCase() + "' where id_uni = '" + sesion.getAttribute("id_uni") + "' ;";
                 con.actualizar(qry);
-                out.println(qry);
-                response.sendRedirect("capturaCensosR.jsp");
+                //out.println(qry);
+                //response.sendRedirect("capturaCensosR.jsp");
 
             }
 
             if (request.getParameter("guarda_seccion").equals("C")) {
 
                 String qry = "update tb_c set  ";
-                for (int i = 46; i < 54; i++) {
+                for (int i = 47; i < 55; i++) {
                     qry = qry + "campo_" + i + "='" + request.getParameter("campo_" + i).toUpperCase() + "', ";
                 }
-                qry = qry + " campo_54='" + request.getParameter("campo_54").toUpperCase() + "' where id_uni = '" + sesion.getAttribute("id_uni") + "' ;";
+                qry = qry + " campo_55='" + request.getParameter("campo_55").toUpperCase() + "' where id_uni = '" + sesion.getAttribute("id_uni") + "' ;";
+                try{
                 con.actualizar(qry);
-                response.sendRedirect("capturaCensosR.jsp");
+                } catch (Exception e) {System.out.println(e.getMessage());}
+                //response.sendRedirect("capturaCensosR.jsp");
             }
 
             if (request.getParameter("guarda_seccion").equals("D")) {
 
                 String qry = "update tb_d set  ";
-                for (int i = 55; i < 62; i++) {
+                for (int i = 56; i < 63; i++) {
                     qry = qry + "campo_" + i + "='" + request.getParameter("campo_" + i).toUpperCase() + "', ";
                 }
-                qry = qry + " campo_62='" + request.getParameter("campo_62").toUpperCase() + "' where id_uni = '" + sesion.getAttribute("id_uni") + "' ;";
+                qry = qry + " campo_63='" + request.getParameter("campo_63").toUpperCase() + "' where id_uni = '" + sesion.getAttribute("id_uni") + "' ;";
                 con.actualizar(qry);
-                response.sendRedirect("capturaCensosR.jsp");
+                //response.sendRedirect("capturaCensosR.jsp");
             }
 
             if (request.getParameter("guarda_seccion").equals("E")) {
 
                 String qry = "update tb_e set  ";
-                for (int i = 63; i < 70; i++) {
+                for (int i = 64; i < 71; i++) {
                     qry = qry + "campo_" + i + "='" + request.getParameter("campo_" + i).toUpperCase() + "', ";
                 }
-                qry = qry + " campo_70='" + request.getParameter("campo_70").toUpperCase() + "' where id_uni = '" + sesion.getAttribute("id_uni") + "' ;";
+                qry = qry + " campo_71='" + request.getParameter("campo_71").toUpperCase() + "' where id_uni = '" + sesion.getAttribute("id_uni") + "' ;";
                 con.actualizar(qry);
-                response.sendRedirect("capturaCensosR.jsp");
+                //response.sendRedirect("capturaCensosR.jsp");
             }
 
             if (request.getParameter("guarda_seccion").equals("F")) {
 
-                String qry = "update tb_f set  campo_71='" + request.getParameter("campo_71").toUpperCase() + "' where id_uni = '" + sesion.getAttribute("id_uni") + "' ;";
+                String qry = "update tb_f set  campo_72='" + request.getParameter("campo_72").toUpperCase() + "' where id_uni = '" + sesion.getAttribute("id_uni") + "' ;";
                 con.actualizar(qry);
-                response.sendRedirect("capturaCensosR.jsp");
+                //out.println("<script>alert('Seccion "+request.getParameter("guarda_seccion")+" guardada correctamente. ')</script>");
+                //out.println("<script>window.location='capturaCensosR.jsp'</script>");
+                //response.sendRedirect("capturaCensosR.jsp");
             }
+                out.println("<script>alert('Sección "+request.getParameter("guarda_seccion")+" guardada CORRECTAMENTE.')</script>");
+                out.println("<script>window.location='capturaCensosR.jsp'</script>");
             con.cierraConexion();
         } catch (SQLException e) {
             try {

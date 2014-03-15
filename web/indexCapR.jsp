@@ -134,7 +134,7 @@
                     <div class="col-md-12">
                         <div class="input-group">
                             <span class="input-group-addon"><label class=" glyphicon glyphicon-saved"></label></span>
-                            <input type="text" name="id_uni" id="id_uni" class="form-control" placeholder="Clave del Hospital" value="<%=id_uni%>" readonly="readonly">
+                            <input type="text" name="id_uni" id="id_uni" class="form-control" placeholder="Clave del Hospital" value="<%=id_uni%>" readonly>
                         </div>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
                     <div class="col-md-12">
                         <div class="input-group">
                             <span class="input-group-addon"><label class=" glyphicon glyphicon-header"></label></span>
-                            <input type="text" name="nombre_gnk" id="nombre_gnk" class="form-control" placeholder="Nombre del Hospital"  value="<%=nombre_gnk%>" readonly="readonly">
+                            <input type="text" name="nombre_gnk" id="nombre_gnk" class="form-control" placeholder="Nombre del Hospital"  value="<%=nombre_gnk%>" readonly>
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                     <div class="col-md-12">
                         <div class="input-group">
                             <span class="input-group-addon"><label class=" glyphicon glyphicon-info-sign"></label></span>
-                            <input type="text" name="tipo" id="tipo" class="form-control" placeholder="Categor&iacute;a del Hospital" value="<%=tipo%>" readonly="readonly">
+                            <input type="text" name="tipo" id="tipo" class="form-control" placeholder="Categor&iacute;a del Hospital" value="<%=tipo%>" readonly>
                         </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
                     <div class="col-md-12">
                         <div class="input-group">
                             <span class="input-group-addon"><label class=" glyphicon glyphicon-hand-right"></label></span>
-                            <input type="text" name="juris" id="juris" class="form-control" placeholder="Jurisdicci&oacute;n" value="<%=juris%>" readonly="readonly">
+                            <input type="text" name="juris" id="juris" class="form-control" placeholder="Jurisdicci&oacute;n" value="<%=juris%>" readonly>
                         </div>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                     <div class="col-md-12">
                         <div class="input-group">
                             <span class="input-group-addon"><label class=" glyphicon glyphicon-home"></label></span>
-                            <input type="text" name="muni" id="muni" class="form-control" placeholder="Municipio" value="<%=muni%>" readonly="readonly">
+                            <input type="text" name="muni" id="muni" class="form-control" placeholder="Municipio" value="<%=muni%>" readonly>
                         </div>
                     </div>
                 </div>
@@ -182,7 +182,7 @@
                     <div class="col-md-12">
                         <div class="input-group">
                             <span class="input-group-addon"><label class=" glyphicon glyphicon-calendar"></label></span>
-                            <input type="text" name="fecha" id="fecha" class="form-control" placeholder="Fecha de Toma del Censo" value="<%=fecha%>" readonly="readonly">
+                            <input type="text" name="fecha" id="fecha" class="form-control" placeholder="Fecha de Toma del Censo" value="<%=fecha%>" readonly>
                         </div>
                     </div>
                 </div>
@@ -191,7 +191,7 @@
                     <div class="col-md-12">
                         <div class="input-group">
                             <span class="input-group-addon"><label class=" glyphicon glyphicon-time"></label></span>
-                            <input type="text" name="hora" id="hora" class="form-control" placeholder="Hora Inicio de toma del Censo" value="<%=hora%>" readonly="readonly">
+                            <input type="text" name="hora" id="hora" class="form-control" placeholder="Hora Inicio de toma del Censo" value="<%=hora%>" readonly>
                         </div>
                     </div>
                 </div>
@@ -200,7 +200,7 @@
                     <div class="col-md-12">
                         <div class="input-group">
                             <span class="input-group-addon"><label class=" glyphicon glyphicon-copyright-mark"></label></span>
-                            <input type="text" name="clues" id="clues" class="form-control" placeholder="CLUES" value="<%=clues%>" readonly="readonly">
+                            <input type="text" name="clues" id="clues" class="form-control" placeholder="CLUES" value="<%=clues%>" readonly>
                         </div>
                     </div>
                 </div>
@@ -209,6 +209,7 @@
                         <div class="input-group">
                             <span class="input-group-addon"><label class=" glyphicon glyphicon-pencil"></label></span>
                             <select name="encuestador" id="encuestador" class="form-control">
+<<<<<<< HEAD
                                 <option>Israel Flores</option>
                                 <option>Juan Carlos Rdz</option>
                                 <option>Roberto Colin</option>
@@ -221,6 +222,20 @@
                                 <option>Octavio Velázquez</option>
                                 <option>Juan Carlos Venegas</option>
                                 <option>Jonathan Calónico</option>
+=======
+                                <option value = "">Seleccione Encuestador</option>
+                                <%
+                                    try {
+                                        obj.conectar();
+                                        ResultSet rset4 = obj.consulta("select nom_com from usuarios where tipo = 'e'");
+                                        while (rset4.next()) {
+                                            out.println("<option>" + rset4.getString(1) + "</option>");
+                                        }
+                                        obj.cierraConexion();
+                                    } catch (Exception e) {
+                                    }
+                                %>
+>>>>>>> FETCH_HEAD
                             </select>
                         </div>
                     </div>
