@@ -1134,7 +1134,7 @@
             else {
                 var dataString = $('#form_com').serialize();
                 //alert('Datos serializados: '+dataString);
-                var dir = 'servletCorreo';
+                var dir = 'Receta.jsp';
 
                 $.ajax({
                     url: dir,
