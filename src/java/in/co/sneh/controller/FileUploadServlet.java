@@ -18,57 +18,61 @@ import java.io.PrintWriter;
 import org.apache.commons.fileupload.FileItemIterator;
 import javax.servlet.http.HttpSession;
 import conn.*;
-    /**
+
+/**
  *
  * @author CEDIS TOLUCA3
  */
-public class FileUploadServlet extends HttpServlet {    
-    public void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
+public class FileUploadServlet extends HttpServlet {
+
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ConectionDB con = new ConectionDB();
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        String Unidad="";
-        boolean isMultiPart=ServletFileUpload.isMultipartContent(request);        
-        if (isMultiPart){
+        String Unidad = "";
+        boolean isMultiPart = ServletFileUpload.isMultipartContent(request);
+        if (isMultiPart) {
             ServletFileUpload upload = new ServletFileUpload();
-            try{
+            try {
                 HttpSession sesion = request.getSession(true);
-                FileItemIterator  itr = upload.getItemIterator(request);
-                while(itr.hasNext()){
+                FileItemIterator itr = upload.getItemIterator(request);
+                while (itr.hasNext()) {
                     FileItemStream item = itr.next();
-                    if(item.isFormField()){
+                    if (item.isFormField()) {
                         String fielName = item.getFieldName();
                         InputStream is = item.openStream();
-                        byte [] b = new byte[is.available()];
+                        byte[] b = new byte[is.available()];
                         is.read(b);
-                        String value = new String (b);
-                        response.getWriter().println(fielName+":"+value+"<br/>");
-                        if(fielName.equals("id_uni")){
+                        String value = new String(b);
+                        response.getWriter().println(fielName + ":" + value + "<br/>");
+                        if (fielName.equals("id_uni")) {
                             Unidad = value;
                         }
-                    }else{
+                    } else {
                         String path = getServletContext().getRealPath("/");
-                        if(FileUpload.processFile(path, item, Unidad)){
-                            try{
+                        if (FileUpload.processFile(path, item, Unidad)) {
+                            try {
                                 con.conectar();
-                                con.insertar("insert into tb_imagenes values('"+Unidad+"', '"+item.getName()+"')");
+                                con.insertar("insert into tb_imagenes values('" + Unidad + "', '" + item.getName() + "')");
                                 con.cierraConexion();
-                            } catch(Exception e){
-                                
+                            } catch (Exception e) {
+
                             }
                             response.getWriter().println("file uploaded successfully");
                             sesion.setAttribute("ban", "1");
                             //response.sendRedirect("cargaFotosCensos.jsp");
-                        }else{ 
+                        } else {
                             response.getWriter().println("file uploading falied");
                             //response.sendRedirect("cargaFotosCensos.jsp");
                         }
                     }
                 }
-            }catch(FileUploadException fue){
+            } catch (FileUploadException fue) {
                 fue.printStackTrace();
             }
-            response.sendRedirect("indexCapR.jsp");
+            out.println("<script>alert('Se cargaron las imagenes correctamente')</script>");
+            out.println("<script>window.location='indexCapR.jsp'</script>");
+            //response.sendRedirect("indexCapR.jsp");
         }
     }
-}  
+}
