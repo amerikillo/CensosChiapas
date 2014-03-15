@@ -5,22 +5,18 @@
     //----------------------------------Modulo de Sesiones
     HttpSession sesion = request.getSession();
     String val = "", user = "", id = "";
-       String id_uni ="";
     session.getId();
     if (sesion.getAttribute("valida") != null) {
         val = (String) sesion.getAttribute("valida");
         user = (String) sesion.getAttribute("nombre");
         id = (String) sesion.getAttribute("id");
-        id_uni = request.getParameter("id_uni");
+        //out.print(user+" "+val+" "+id);
     }
     if (!val.equals("valida")) {
         response.sendRedirect("index.jsp");
  }
 //out.print (val+user+id+session.getId());
 //--------------------------------------------------------
-    ConectionDB con = new ConectionDB();
-    
- 
 
 
 %>
@@ -152,7 +148,7 @@
                                 <div class="input-group">
                                     <span class="input-group-addon"><label class="glyphicon glyphicon-header"></label></span>
                                     <select name="id_uni" id="id_yuni" class="form-control">
-                                        <option>-- Seleccione Centro de Salud --</option>
+                                        <option>-- Seleccione Hospital --</option>
                                         <%                                                    con.conectar();
                                             ResultSet rset2 = con.consulta("select t.id_uni, t.nombre_gnk, t.juris from tb_unidades t, tb_a ta where t.id_uni = ta.id_uni order by id_uni asc");
                                             while (rset2.next()) {
@@ -1134,7 +1130,7 @@
             else {
                 var dataString = $('#form_com').serialize();
                 //alert('Datos serializados: '+dataString);
-                var dir = 'Receta.jsp';
+                var dir = 'servletCorreo';
 
                 $.ajax({
                     url: dir,

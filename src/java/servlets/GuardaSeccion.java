@@ -41,7 +41,6 @@ public class GuardaSeccion extends HttpServlet {
             out.println("<title>Servlet GuardaSeccion</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<img src='imagenes/loading.gif' width='400' heitgh='400' /");
             con.conectar();
             out.println(request.getParameter("guarda_seccion"));
 

@@ -83,13 +83,7 @@
       <tr>
           <td align="center">&nbsp;</td>
           <td width="250" align="center"><h4><a href="consultaCensosR.jsp"><strong>Consulta de Censos y Pictogr&aacute;ficos</strong></a></h4></td>
-          
         <td align="center">&nbsp;<!--h4><a href="menu_inven.jsp"><strong>Consulta Pictogr&aacute;ficos</strong></a></h4--></td>
-      </tr>
-      <tr>
-      <td></td>
-      <td width="250" align="center"><h4><a href="http://166.78.128.202:8080/InventariosChiapas/index.jsp"><strong>Consulta de Inventarios</strong></a></h4></td>
-      <td></td>
       </tr>
       <tr>
           <td class="center1">&nbsp;</td>

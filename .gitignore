@@ -7,9 +7,3 @@ build/web/capturaCensosR.jsp
 *.class
 
 nbproject/private/private.xml
-
-*.properties
-
-nbproject/private/private.xml
-
-nbproject/project.properties

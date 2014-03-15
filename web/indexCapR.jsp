@@ -209,7 +209,6 @@
                         <div class="input-group">
                             <span class="input-group-addon"><label class=" glyphicon glyphicon-pencil"></label></span>
                             <select name="encuestador" id="encuestador" class="form-control">
-                                <option value = "">Seleccione Encuestador</option>
                                 <option>Israel Flores</option>
                                 <option>Juan Carlos Rdz</option>
                                 <option>Roberto Colin</option>
@@ -231,7 +230,7 @@
                 <%
                     if (ban == 1) {
                 %>             
-                <button name="envio" value = "1" class="btn btn-primary btn-lg btn-block" type="submit" onclick="return valida();">Realizar Censo</button>
+                <button name="envio" value = "1" class="btn btn-primary btn-lg btn-block" type="submit">Realizar Censo</button>
                 <button name="envio" value = "2" class="btn btn-primary btn-lg btn-block" type="submit">Cargar Imagenes</button>
                 <%
                     }
@@ -255,13 +254,3 @@
 <%
     sesion.invalidate();
 %>
-
-<script>
-                    function valida() {
-                        if (document.getElementById('encuestador').value === "") {
-                            alert('Seleccione un encuestador');
-                            return false;
-                        }
-                        return true;
-                    }
-</script>
